@@ -15,9 +15,19 @@ export default class GalleryComponent extends React.Component<IGalleryComponentP
   }
 
   public render() {
+    const { pictures, requesting } = this.props
+
     return (
       <div>
-        <img src='/images/1.jpeg'/>
+        {requesting && (
+          <div>
+            Loading
+          </div>
+        )}
+
+        {pictures.map(it => (
+          <img src={it.url}/>
+        ))}
       </div>
     )
   }

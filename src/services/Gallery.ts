@@ -3,11 +3,11 @@ import {
 } from '../models/picture/modelPicture'
 
 const mockGalleryResponse: { [key: string]: IPictureModel } = {
-  '1': { id: '1', url: '' },
-  '2': { id: '2', url: '' },
-  '3': { id: '3', url: '' },
-  '4': { id: '4', url: '' },
-  '5': { id: '5', url: '' }
+  '1': { id: '1', url: '/images/1.jpg' },
+  '2': { id: '2', url: '/images/2.jpg' },
+  '3': { id: '3', url: '/images/3.jpg' },
+  '4': { id: '4', url: '/images/4.jpg' },
+  '5': { id: '5', url: '/images/5.jpg' }
 }
 
 class GalleryService {
