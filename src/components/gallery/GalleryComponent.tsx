@@ -17,7 +17,7 @@ export default class GalleryComponent extends React.Component<IGalleryComponentP
   public render() {
     return (
       <div>
-        Gallery will be soon
+        <img src='/images/1.jpeg'/>
       </div>
     )
   }
