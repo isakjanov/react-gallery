@@ -2,12 +2,14 @@ import { IGalleryState } from '../types'
 import {
   IGalleryAction,
   IGalleryActionRequestFail,
-  IGalleryActionRequestSuccess
+  IGalleryActionRequestSuccess,
+  IGalleryActionSetCurrentPicture
 } from './galleryActions'
 import {
   ACTION_GALLERY_REQUEST,
   ACTION_GALLERY_REQUEST_FAIL,
-  ACTION_GALLERY_REQUEST_SUCCESS
+  ACTION_GALLERY_REQUEST_SUCCESS,
+  ACTION_GALLERY_SET_CURRENT_PICTURE
 } from '../const'
 import { IPictureModel } from '../../models/picture/modelPicture'
 
@@ -45,6 +47,16 @@ function setGalleryRequestFail(state: IGalleryState, action: IGalleryAction): IG
   })
 }
 
+function setGalleryCurrentPicture(state: IGalleryState, action: IGalleryAction): IGalleryState {
+  const index = (action as IGalleryActionSetCurrentPicture).index
+  return Object.assign({}, state, {
+    metadata: {
+      ...state.metadata,
+      currentPicture: index
+    }
+  })
+}
+
 const initialState: IGalleryState = {
   items: {},
   metadata: {
@@ -62,6 +74,8 @@ export const galleryReducer = (state: IGalleryState = initialState, action: IGal
       return setGalleryRequestSuccess(state, action)
     case ACTION_GALLERY_REQUEST_FAIL:
       return setGalleryRequestFail(state, action)
+    case ACTION_GALLERY_SET_CURRENT_PICTURE:
+      return setGalleryCurrentPicture(state, action)
     default:
       return state
   }
@@ -81,4 +95,8 @@ export function getGalleryRequestError(state: IGalleryState): string {
 
 export function getGalleryPictures(state: IGalleryState): IPictureModel[] {
   return Object.keys(state.items).map(key => state.items[key])
+}
+
+export function getGalleryCurrentPicture(state: IGalleryState): number {
+  return state.metadata.currentPicture
 }

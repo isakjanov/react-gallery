@@ -4,7 +4,8 @@ import {
 import {
   ACTION_GALLERY_REQUEST,
   ACTION_GALLERY_REQUEST_FAIL,
-  ACTION_GALLERY_REQUEST_SUCCESS
+  ACTION_GALLERY_REQUEST_SUCCESS,
+  ACTION_GALLERY_SET_CURRENT_PICTURE
 } from '../const'
 import galleryService from '../../services/Gallery'
 
@@ -21,6 +22,10 @@ export interface IGalleryActionRequestSuccess extends IGalleryAction {
 
 export interface IGalleryActionRequestFail extends IGalleryAction {
   error: string
+}
+
+export interface IGalleryActionSetCurrentPicture extends IGalleryAction{
+  index: number
 }
 
 export const fetchGallery = () => (dispatch: any) => {
@@ -47,5 +52,12 @@ export function setGalleryRequestFail(error: string): IGalleryActionRequestFail 
   return {
     type: ACTION_GALLERY_REQUEST_FAIL,
     error
+  }
+}
+
+export function setCurrentPicture(index: number): IGalleryActionSetCurrentPicture {
+  return {
+    type: ACTION_GALLERY_SET_CURRENT_PICTURE,
+    index
   }
 }

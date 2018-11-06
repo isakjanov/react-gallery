@@ -1,0 +1,29 @@
+.gallery {
+  .container {
+    margin: 0px;
+    padding: 0px;
+    white-space: nowrap;
+    width: 600px;
+    height: 400px;
+    overflow-x: auto;
+    position: relative
+  }
+
+  ul {
+    margin: 0px;
+    padding: 0px;
+    white-space: nowrap;
+    position: absolute;
+  }
+
+  li {
+    display: inline;
+    width: 600px;
+    height: 400px;
+  }
+
+  img {
+    height: 400px;
+    width: 600px;
+  }
+}

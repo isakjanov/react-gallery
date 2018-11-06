@@ -1,18 +1,23 @@
 import { connect } from 'react-redux'
 import { IRootState } from '../../state/types'
 import {
+  getGalleryCurrentPicture,
   getGalleryPictures,
   getGalleryRequestError,
   getGalleryRequesting
 } from '../../state/gallery/galleryReducer'
-import { fetchGallery } from '../../state/gallery/galleryActions'
+import {
+  fetchGallery,
+  setCurrentPicture
+} from '../../state/gallery/galleryActions'
 import GalleryComponent from './GalleryComponent'
 
 const mapStateToProps = (state: IRootState, ownProps: any) => {
   return {
     pictures: getGalleryPictures(state.gallery),
     requesting: getGalleryRequesting(state.gallery),
-    error: getGalleryRequestError(state.gallery)
+    error: getGalleryRequestError(state.gallery),
+    currentPicture: getGalleryCurrentPicture(state.gallery)
   }
 }
 
@@ -20,6 +25,9 @@ const mapDispatchToProps = (dispatch: any) => {
   return {
     onComponentMount: () => {
       dispatch(fetchGallery())
+    },
+    onCurrentPictureChange: (index: number) => {
+      dispatch(setCurrentPicture(index))
     }
   }
 }
