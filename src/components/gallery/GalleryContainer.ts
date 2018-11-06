@@ -6,9 +6,9 @@ import {
   getGalleryRequesting
 } from '../../state/gallery/galleryReducer'
 import { fetchGallery } from '../../state/gallery/galleryActions'
-import Gallery from './GalleryContainer'
+import GalleryComponent from './GalleryComponent'
 
-const mapStateToProps = (state: IRootState, ownProps: IGalleryOwnProperties) => {
+const mapStateToProps = (state: IRootState, ownProps: any) => {
   return {
     pictures: getGalleryPictures(state.gallery),
     requesting: getGalleryRequesting(state.gallery),
@@ -16,7 +16,7 @@ const mapStateToProps = (state: IRootState, ownProps: IGalleryOwnProperties) => 
   }
 }
 
-const mapDispatchToProps = (dispatch: any): IGalleryMethods => {
+const mapDispatchToProps = (dispatch: any) => {
   return {
     onComponentMount: () => {
       dispatch(fetchGallery())
@@ -24,4 +24,4 @@ const mapDispatchToProps = (dispatch: any): IGalleryMethods => {
   }
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(Gallery)
+export default connect(mapStateToProps, mapDispatchToProps)(GalleryComponent)

@@ -80,5 +80,5 @@ export function getGalleryRequestError(state: IGalleryState): string {
 }
 
 export function getGalleryPictures(state: IGalleryState): IPictureModel[] {
-  return Object.values(state.items)
+  return Object.keys(state.items).map(key => state.items[key])
 }

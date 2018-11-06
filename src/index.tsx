@@ -1,5 +1,5 @@
-import * as React from "react"
-import * as ReactDOM from "react-dom"
+import * as React from 'react'
+import * as ReactDOM from 'react-dom'
 import thunkMiddleware from 'redux-thunk'
 import {
   applyMiddleware,
@@ -14,7 +14,6 @@ import {
 import { Provider } from 'react-redux'
 import createBrowserHistory from 'history/createBrowserHistory'
 import App from './components/App'
-import './styles/css/index.css'
 import rootReducer from './state/rootReducer'
 
 const store = createStore(

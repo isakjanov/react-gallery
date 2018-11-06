@@ -1,14 +1,14 @@
 import * as React from 'react'
 import { IPictureModel } from '../../models/picture/modelPicture'
 
-interface IGalleryProps {
+interface IGalleryComponentProps {
   pictures: IPictureModel[]
   requesting: boolean
   error: string
   onComponentMount: () => void
 }
 
-export default class Gallery extends React.Component<IGalleryProps> {
+export default class GalleryComponent extends React.Component<IGalleryComponentProps> {
 
   public componentDidMount() {
     this.props.onComponentMount()
@@ -17,7 +17,7 @@ export default class Gallery extends React.Component<IGalleryProps> {
   public render() {
     return (
       <div>
-        Gallery is going to be here
+        Gallery will be soon
       </div>
     )
   }
