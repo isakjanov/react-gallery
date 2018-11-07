@@ -1,5 +1,10 @@
 import * as React from 'react'
 import { IPictureModel } from '../../models/picture/modelPicture'
+import {
+  Motion,
+  PlainStyle,
+  spring
+} from 'react-motion'
 
 interface IGalleryComponentProps {
   pictures: IPictureModel[]
@@ -29,13 +34,19 @@ export default class GalleryComponent extends React.Component<IGalleryComponentP
         )}
 
         <div className='container'>
-          <ul style={{left: position}}>
-            {pictures.map(it => (
-              <li>
-                <img src={it.url}/>
-              </li>
-            ))}
-          </ul>
+          <Motion defaultStyle={{left: 0}} style={{left: spring(position)}}>
+            {
+              (interpolatedStyle: PlainStyle) => (
+                <ul style={interpolatedStyle}>
+                  {pictures.map(it => (
+                    <li>
+                      <img src={it.url}/>
+                    </li>
+                  ))}
+                </ul>
+              )
+            }
+          </Motion>
         </div>
 
         <div onClick={this.handlePrevClick} className='cursor--pointer'>prev</div>
