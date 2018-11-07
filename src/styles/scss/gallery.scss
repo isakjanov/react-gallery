@@ -9,14 +9,13 @@ $gallery-picture-width: 600px;
     width: $gallery-picture-width;
     height: $gallery-picture-height;
     overflow-x: auto;
-    position: relative
   }
 
   ul {
     margin: 0px;
     padding: 0px;
     white-space: nowrap;
-    position: absolute;
+    transform: translateX(0);
   }
 
   li {
@@ -28,5 +27,16 @@ $gallery-picture-width: 600px;
   img {
     height: $gallery-picture-height;
     width: $gallery-picture-width;
+  }
+
+  .animate{
+    -webkit-transition-duration: .7s;
+    -moz-transition-duration: .7s;
+    -o-transition-duration: .7s;
+    transition-duration: .7s;
+    -webkit-transition-property: -webkit-transform;
+    -moz-transition-property: -moz-transform;
+    -o-transition-property: -o-transform;
+    transition-property: transform;
   }
 }
