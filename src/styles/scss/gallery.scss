@@ -15,11 +15,15 @@ $gallery-picture-width: 600px;
     margin: 0px;
     padding: 0px;
     white-space: nowrap;
-    transform: translateX(0);
+    position: relative;
+    width: 5 * $gallery-picture-width
   }
 
   li {
     display: inline;
+    list-style: none;
+    position: relative;
+    float: left;
     width: $gallery-picture-width;
     height: $gallery-picture-height;
   }
