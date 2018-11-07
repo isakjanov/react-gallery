@@ -1,10 +1,13 @@
+$gallery-picture-height: 400px;
+$gallery-picture-width: 600px;
+
 .gallery {
   .container {
     margin: 0px;
     padding: 0px;
     white-space: nowrap;
-    width: 600px;
-    height: 400px;
+    width: $gallery-picture-width;
+    height: $gallery-picture-height;
     overflow-x: auto;
     position: relative
   }
@@ -18,12 +21,12 @@
 
   li {
     display: inline;
-    width: 600px;
-    height: 400px;
+    width: $gallery-picture-width;
+    height: $gallery-picture-height;
   }
 
   img {
-    height: 400px;
-    width: 600px;
+    height: $gallery-picture-height;
+    width: $gallery-picture-width;
   }
 }
