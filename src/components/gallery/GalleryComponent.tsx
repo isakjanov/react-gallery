@@ -37,7 +37,7 @@ export default class GalleryComponent extends React.Component<IGalleryComponentP
           <div className='container'>
             <ul id='carousel' className='animate'>
               {pictures.map((it, index) => (
-                <li className='animate'>
+                <li className='animate' key={`gallery-image-${it.id}`}>
                   <img src={it.url}/>
                 </li>
               ))}
@@ -115,6 +115,10 @@ export default class GalleryComponent extends React.Component<IGalleryComponentP
   }
 
   private assignTransitionCompleteListener = () => {
+    if (!document.getElementById) {
+      return
+    }
+
     const carouselNode = document.getElementById('carousel')
     if (!carouselNode) {
       return

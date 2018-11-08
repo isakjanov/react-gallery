@@ -15,6 +15,7 @@
     "max-classes-per-file": [true, 5, "exclude-class-expressions"],
     "comment-format": [false, "check-space"],
     "no-empty-interface": false,
-    "prefer-for-of": false
+    "prefer-for-of": false,
+    "jsx-no-lambda": false
   }
 }
