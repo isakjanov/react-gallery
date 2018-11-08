@@ -1,5 +1,6 @@
 import * as React from 'react'
 import { IPictureModel } from '../../models/picture/modelPicture'
+import GalleryDotsContainer from './GalleryDotsContainer'
 
 interface IGalleryComponentProps {
   pictures: IPictureModel[]
@@ -47,6 +48,7 @@ export default class GalleryComponent extends React.Component<IGalleryComponentP
         <div onClick={this.handlePrevClick} className='cursor--pointer'>prev</div>
         <div onClick={this.handleNextClick} className='cursor--pointer'>next</div>
 
+        <GalleryDotsContainer/>
       </div>
     )
   }
@@ -60,21 +62,21 @@ export default class GalleryComponent extends React.Component<IGalleryComponentP
 
     const picturesNodes = carouselNode.children
     const { currentPicture, pictures, onCurrentPictureChange } = this.props
-    const nextPicture = currentPicture === pictures.length - 1 ? 0 : currentPicture + 1;
+    const nextPicture = currentPicture === pictures.length - 1 ? 0 : currentPicture + 1
 
     // Move all pictures to their initial positions
     for (let i = 0; i < picturesNodes.length; i++) {
       (picturesNodes[i] as HTMLElement).style.opacity = '0';
-      (picturesNodes[i] as HTMLElement).style.transform = `translateX(${-(i - 1)*600}px)`
+      (picturesNodes[i] as HTMLElement).style.transform = `translateX(${-(i - 1) * 600}px)`
     }
 
     // Move current picture left
     (picturesNodes[currentPicture] as HTMLElement).style.opacity = '1';
-    (picturesNodes[currentPicture] as HTMLElement).style.transform = `translateX(${-(currentPicture + 1)*600}px)`;
+    (picturesNodes[currentPicture] as HTMLElement).style.transform = `translateX(${-(currentPicture + 1) * 600}px)`;
 
     // Move next picture left
     (picturesNodes[nextPicture] as HTMLElement).style.opacity = '1';
-    (picturesNodes[nextPicture] as HTMLElement).style.transform = `translateX(${-(nextPicture)*600}px)`
+    (picturesNodes[nextPicture] as HTMLElement).style.transform = `translateX(${-(nextPicture) * 600}px)`
 
     onCurrentPictureChange(nextPicture)
   }
@@ -88,21 +90,21 @@ export default class GalleryComponent extends React.Component<IGalleryComponentP
 
     const picturesNodes = carouselNode.children
     const { currentPicture, pictures, onCurrentPictureChange } = this.props
-    const nextPicture = currentPicture === 0 ? pictures.length - 1 : currentPicture - 1;
+    const nextPicture = currentPicture === 0 ? pictures.length - 1 : currentPicture - 1
 
     // Move all pictures to their initial positions
     for (let i = 0; i < picturesNodes.length; i++) {
       (picturesNodes[i] as HTMLElement).style.opacity = '0';
-      (picturesNodes[i] as HTMLElement).style.transform = `translateX(${-(i + 1)*600}px)`
+      (picturesNodes[i] as HTMLElement).style.transform = `translateX(${-(i + 1) * 600}px)`
     }
 
     // Move current picture right
     (picturesNodes[currentPicture] as HTMLElement).style.opacity = '1';
-    (picturesNodes[currentPicture] as HTMLElement).style.transform = `translateX(${-(currentPicture - 1)*600}px)`;
+    (picturesNodes[currentPicture] as HTMLElement).style.transform = `translateX(${-(currentPicture - 1) * 600}px)`;
 
     // Move next picture left
     (picturesNodes[nextPicture] as HTMLElement).style.opacity = '1';
-    (picturesNodes[nextPicture] as HTMLElement).style.transform = `translateX(${-(nextPicture)*600}px)`
+    (picturesNodes[nextPicture] as HTMLElement).style.transform = `translateX(${-(nextPicture) * 600}px)`
 
     onCurrentPictureChange(nextPicture)
   }
@@ -114,10 +116,10 @@ export default class GalleryComponent extends React.Component<IGalleryComponentP
     }
 
     for (let i = 0; i < carouselNode.children.length; i++) {
-      carouselNode.children[i].addEventListener("transitionend", this.slidingCompleted, true);
-      carouselNode.children[i].addEventListener("webkitTransitionEnd", this.slidingCompleted, true);
-      carouselNode.children[i].addEventListener("oTransitionEnd", this.slidingCompleted, true);
-      carouselNode.children[i].addEventListener("MSTransitionEnd", this.slidingCompleted, true);
+      carouselNode.children[i].addEventListener('transitionend', this.slidingCompleted, true)
+      carouselNode.children[i].addEventListener('webkitTransitionEnd', this.slidingCompleted, true)
+      carouselNode.children[i].addEventListener('oTransitionEnd', this.slidingCompleted, true)
+      carouselNode.children[i].addEventListener('MSTransitionEnd', this.slidingCompleted, true)
     }
   }
 
