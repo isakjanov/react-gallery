@@ -3,6 +3,7 @@ import { IPictureModel } from '../../models/picture/modelPicture'
 import GalleryDotsContainer from './GalleryDotsContainer'
 import IconArrowRight from '../../icons/IconArrowRight'
 import IconArrowLeft from '../../icons/IconArrowLeft'
+import Preloader from '../ui/Preloader'
 
 interface IGalleryComponentProps {
   pictures: IPictureModel[]
@@ -29,11 +30,6 @@ export default class GalleryComponent extends React.Component<IGalleryComponentP
 
     return (
       <>
-        {requesting && (
-          <div>
-            Loading
-          </div>
-        )}
         <div className='gallery flex flex-row justify-center align-items-center'>
           <div onClick={this.handlePrevClick} className='cursor--pointer'>
             <IconArrowLeft/>
@@ -49,6 +45,9 @@ export default class GalleryComponent extends React.Component<IGalleryComponentP
 
             <div className='absolute gallery-dots flex justify-center'>
               <GalleryDotsContainer/>
+            </div>
+            <div className='absolute preloader flex justify-center align-items-center'>
+              <Preloader loading={requesting}/>
             </div>
           </div>
           <div onClick={this.handleNextClick} className='cursor--pointer'>
