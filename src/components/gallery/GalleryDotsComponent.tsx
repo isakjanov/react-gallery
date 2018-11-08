@@ -5,6 +5,7 @@ import IconOutLineDot from '../../icons/IconOutlineDot'
 interface IGalleryDotsComponentProps {
   currentImage: number
   count: number
+  className?: string
 }
 
 interface IDotComponentProps {
@@ -14,7 +15,7 @@ interface IDotComponentProps {
 
 const GalleryDotsComponent = (props: IGalleryDotsComponentProps) => {
   return (
-    <div className='flex flex-row'>
+    <div className={`flex flex-row ${props.className}`}>
       {
         Array.from(new Array(props.count))
           .map((value, index) => (<DotComponent index={index} currentImage={props.currentImage}/>))

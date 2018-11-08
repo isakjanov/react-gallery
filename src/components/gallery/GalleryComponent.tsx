@@ -1,6 +1,8 @@
 import * as React from 'react'
 import { IPictureModel } from '../../models/picture/modelPicture'
 import GalleryDotsContainer from './GalleryDotsContainer'
+import IconArrowRight from '../../icons/IconArrowRight'
+import IconArrowLeft from '../../icons/IconArrowLeft'
 
 interface IGalleryComponentProps {
   pictures: IPictureModel[]
@@ -26,30 +28,34 @@ export default class GalleryComponent extends React.Component<IGalleryComponentP
     const { pictures, requesting } = this.props
 
     return (
-      <div className='gallery'>
+      <>
         {requesting && (
           <div>
             Loading
           </div>
         )}
+        <div className='gallery flex flex-row justify-center align-items-center'>
+          <div onClick={this.handlePrevClick} className='cursor--pointer'>
+            <IconArrowLeft/>
+          </div>
+          <div className='container'>
+            <ul id='carousel' className='animate'>
+              {pictures.map((it, index) => (
+                <li className='animate'>
+                  <img src={it.url}/>
+                </li>
+              ))}
+            </ul>
 
-        <div className='container'>
-
-          <ul id='carousel' className='animate'>
-            {pictures.map((it, index) => (
-              <li className='animate'>
-                <img src={it.url}/>
-              </li>
-            ))}
-          </ul>
-
+            <div className='absolute gallery-dots flex justify-center'>
+              <GalleryDotsContainer/>
+            </div>
+          </div>
+          <div onClick={this.handleNextClick} className='cursor--pointer'>
+            <IconArrowRight/>
+          </div>
         </div>
-
-        <div onClick={this.handlePrevClick} className='cursor--pointer'>prev</div>
-        <div onClick={this.handleNextClick} className='cursor--pointer'>next</div>
-
-        <GalleryDotsContainer/>
-      </div>
+      </>
     )
   }
 

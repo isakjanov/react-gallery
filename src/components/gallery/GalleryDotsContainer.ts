@@ -9,7 +9,8 @@ import GalleryDotsComponent from './GalleryDotsComponent'
 const mapStateToProps = (state: IRootState, ownProps: any) => {
   return {
     currentImage: getGalleryCurrentPicture(state.gallery),
-    count: getGalleryPictures(state.gallery).length
+    count: getGalleryPictures(state.gallery).length,
+    ...ownProps
   }
 }
 

@@ -2,13 +2,22 @@ $gallery-picture-height: 400px;
 $gallery-picture-width: 600px;
 
 .gallery {
+  margin: 10px;
+
   .container {
+    position: relative;
     margin: 0px;
     padding: 0px;
     white-space: nowrap;
     width: $gallery-picture-width;
     height: $gallery-picture-height;
     overflow-x: auto;
+  }
+
+  .gallery-dots {
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
   }
 
   ul {
