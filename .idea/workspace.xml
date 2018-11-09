@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e2aae185-60ef-420b-9e27-cb68072c3de0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/state/gallery/galleryReducer.test.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/state/gallery/galleryActions.test.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -33,7 +33,7 @@
           <entry key="md" value="1" />
           <entry key="scss" value="12" />
           <entry key="svg" value="9" />
-          <entry key="ts" value="61" />
+          <entry key="ts" value="63" />
           <entry key="tsx" value="42" />
           <entry key="xml" value="1" />
         </counts>
@@ -47,7 +47,7 @@
           <entry key="Markdown" value="1" />
           <entry key="SCSS" value="12" />
           <entry key="SVG" value="9" />
-          <entry key="TypeScript" value="61" />
+          <entry key="TypeScript" value="63" />
           <entry key="TypeScript JSX" value="42" />
           <entry key="XML" value="1" />
           <entry key="tsconfig" value="3" />
@@ -58,18 +58,18 @@
           <entry key="gitignore" value="19" />
           <entry key="json" value="52" />
           <entry key="scss" value="735" />
-          <entry key="ts" value="5024" />
+          <entry key="ts" value="5472" />
           <entry key="tsx" value="6194" />
-          <entry key="txt" value="367" />
+          <entry key="txt" value="375" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Git file" value="19" />
           <entry key="JSON" value="45" />
-          <entry key="PLAIN_TEXT" value="367" />
+          <entry key="PLAIN_TEXT" value="375" />
           <entry key="SCSS" value="735" />
-          <entry key="TypeScript" value="5024" />
+          <entry key="TypeScript" value="5472" />
           <entry key="TypeScript JSX" value="6194" />
           <entry key="tsconfig" value="7" />
         </counts>
@@ -87,11 +87,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/state/gallery/galleryReducer.ts">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/state/gallery/galleryActions.test.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="107">
-              <caret line="76" column="43" selection-start-line="76" selection-start-column="9" selection-end-line="76" selection-end-column="43" />
+            <state relative-caret-position="210">
+              <caret line="14" column="2" selection-start-line="14" selection-start-column="2" selection-end-line="14" selection-end-column="2" />
+              <folding>
+                <element signature="e#0#49#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -99,20 +102,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/state/gallery/galleryActions.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="212">
-              <caret line="26" column="17" selection-start-line="26" selection-start-column="17" selection-end-line="26" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/state/gallery/galleryReducer.test.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1095">
-              <caret line="73" column="19" lean-forward="true" selection-start-line="73" selection-start-column="19" selection-end-line="73" selection-end-column="19" />
-              <folding>
-                <element signature="e#0#40#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="197">
+              <caret line="30" column="25" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -179,6 +170,7 @@
         <option value="$PROJECT_DIR$/src/components/gallery/GalleryDotsComponent.test.tsx" />
         <option value="$PROJECT_DIR$/src/components/ui/Preloader.test.tsx" />
         <option value="$PROJECT_DIR$/src/state/gallery/galleryReducer.test.ts" />
+        <option value="$PROJECT_DIR$/src/state/gallery/galleryActions.test.ts" />
       </list>
     </option>
   </component>
@@ -244,7 +236,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541748553656" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541749645973" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.tslint" value="$PROJECT_DIR$/node_modules/tslint" />
@@ -276,7 +268,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Jest.galleryReducer tests">
+  <component name="RunManager" selected="Jest.Gallery actions">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <method v="2">
@@ -295,6 +287,18 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Gallery actions" type="JavaScriptTestRunnerJest" factoryName="Jest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="SUITE" />
+      <test-file value="$PROJECT_DIR$/src/state/gallery/galleryActions.test.ts" />
+      <test-names>
+        <test-name value="Gallery actions" />
+      </test-names>
+      <method v="2" />
+    </configuration>
     <configuration name="galleryReducer tests" type="JavaScriptTestRunnerJest" factoryName="Jest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
@@ -304,19 +308,6 @@
       <test-file value="$PROJECT_DIR$/src/state/gallery/galleryReducer.test.ts" />
       <test-names>
         <test-name value="galleryReducer tests" />
-      </test-names>
-      <method v="2" />
-    </configuration>
-    <configuration name="galleryReducer tests.Handles ACTION_GALLERY_REQUEST" type="JavaScriptTestRunnerJest" factoryName="Jest" temporary="true" nameIsGenerated="true">
-      <node-interpreter value="project" />
-      <node-options value="" />
-      <working-dir value="$PROJECT_DIR$" />
-      <envs />
-      <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/src/state/gallery/galleryReducer.test.ts" />
-      <test-names>
-        <test-name value="galleryReducer tests" />
-        <test-name value="Handles ACTION_GALLERY_REQUEST" />
       </test-names>
       <method v="2" />
     </configuration>
@@ -377,19 +368,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Jest.galleryReducer tests.Handles ACTION_GALLERY_REQUEST" />
       <item itemvalue="Jest.galleryReducer tests.Handles ACTION_GALLERY_REQUEST_SUCCESS" />
       <item itemvalue="Jest.galleryReducer tests.Handles ACTION_GALLERY_REQUEST_FAIL" />
       <item itemvalue="Jest.galleryReducer tests.Handles ACTION_GALLERY_SET_CURRENT_PICTURE" />
       <item itemvalue="Jest.galleryReducer tests" />
+      <item itemvalue="Jest.Gallery actions" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Jest.Gallery actions" />
         <item itemvalue="Jest.galleryReducer tests" />
         <item itemvalue="Jest.galleryReducer tests.Handles ACTION_GALLERY_SET_CURRENT_PICTURE" />
         <item itemvalue="Jest.galleryReducer tests.Handles ACTION_GALLERY_REQUEST_FAIL" />
         <item itemvalue="Jest.galleryReducer tests.Handles ACTION_GALLERY_REQUEST_SUCCESS" />
-        <item itemvalue="Jest.galleryReducer tests.Handles ACTION_GALLERY_REQUEST" />
       </list>
     </recent_temporary>
   </component>
@@ -411,7 +402,7 @@
       <workItem from="1541570872615" duration="1709000" />
       <workItem from="1541597906056" duration="7749000" />
       <workItem from="1541679151377" duration="9676000" />
-      <workItem from="1541745088220" duration="4101000" />
+      <workItem from="1541745088220" duration="5028000" />
     </task>
     <task id="LOCAL-00001" summary="added dependencies">
       <created>1541431555896</created>
@@ -532,13 +523,17 @@
       <option name="project" value="LOCAL" />
       <updated>1541748325490</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Wrote tests for reducers">
+      <created>1541749212289</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1541749212289</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="_DotComponent___should_display_baseline_dot - 2018.11.09 at 13h 19m 20s.xml">
-      <configuration name="&lt;DotComponent/&gt;.should display baseline dot" configurationId="JavaScriptTestRunnerJest" />
-    </history-entry>
     <history-entry file="_Preloader___should_render_elements_correctly - 2018.11.09 at 13h 21m 54s.xml">
       <configuration name="&lt;Preloader/&gt;.should render elements correctly" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
@@ -566,9 +561,12 @@
     <history-entry file="galleryReducer_tests - 2018.11.09 at 13h 39m 59s.xml">
       <configuration name="galleryReducer tests" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
+    <history-entry file="Gallery_actions - 2018.11.09 at 13h 52m 59s.xml">
+      <configuration name="Gallery actions" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="42608000" />
+    <option name="totallyTimeSpent" value="43535000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="777" extended-state="6" />
@@ -647,7 +645,8 @@
     <MESSAGE value="added preloader" />
     <MESSAGE value="Wrote tests for GalleryComponent" />
     <MESSAGE value="Wrote tests for components" />
-    <option name="LAST_COMMIT_MESSAGE" value="Wrote tests for components" />
+    <MESSAGE value="Wrote tests for reducers" />
+    <option name="LAST_COMMIT_MESSAGE" value="Wrote tests for reducers" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
@@ -888,26 +887,36 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/state/gallery/galleryReducer.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="107">
-          <caret line="76" column="43" selection-start-line="76" selection-start-column="9" selection-end-line="76" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/state/gallery/galleryActions.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="212">
-          <caret line="26" column="17" selection-start-line="26" selection-start-column="17" selection-end-line="26" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/state/gallery/galleryReducer.test.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1095">
           <caret line="73" column="19" lean-forward="true" selection-start-line="73" selection-start-column="19" selection-end-line="73" selection-end-column="19" />
           <folding>
             <element signature="e#0#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/state/gallery/galleryReducer.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="158">
+          <caret line="76" column="43" selection-start-line="76" selection-start-column="9" selection-end-line="76" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/state/gallery/galleryActions.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="30" column="25" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/state/gallery/galleryActions.test.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="2" selection-start-line="14" selection-start-column="2" selection-end-line="14" selection-end-column="2" />
+          <folding>
+            <element signature="e#0#49#0" expanded="true" />
           </folding>
         </state>
       </provider>
