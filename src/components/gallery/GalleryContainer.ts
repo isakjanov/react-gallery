@@ -11,6 +11,7 @@ import {
   setCurrentPicture
 } from '../../state/gallery/galleryActions'
 import GalleryComponent from './GalleryComponent'
+import galleryService from '../../services/impl/Gallery'
 
 const mapStateToProps = (state: IRootState, ownProps: any) => {
   return {
@@ -24,7 +25,7 @@ const mapStateToProps = (state: IRootState, ownProps: any) => {
 const mapDispatchToProps = (dispatch: any) => {
   return {
     onComponentMount: () => {
-      dispatch(fetchGallery())
+      dispatch(fetchGallery(galleryService))
     },
     onCurrentPictureChange: (index: number) => {
       dispatch(setCurrentPicture(index))

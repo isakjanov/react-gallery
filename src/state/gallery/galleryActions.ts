@@ -7,7 +7,7 @@ import {
   ACTION_GALLERY_REQUEST_SUCCESS,
   ACTION_GALLERY_SET_CURRENT_PICTURE
 } from '../const'
-import galleryService from '../../services/Gallery'
+import { IGalleryService } from '../../services'
 
 export interface IGalleryAction {
   type: string
@@ -28,9 +28,9 @@ export interface IGalleryActionSetCurrentPicture extends IGalleryAction{
   index: number
 }
 
-export const fetchGallery = () => (dispatch: any) => {
+export const fetchGallery = (service: IGalleryService) => (dispatch: any) => {
   dispatch(requestGallery())
-  galleryService.getPictures()
+  return service.getPictures()
     .then(items => dispatch(setGalleryRequestSuccess(items)))
     .catch(error => dispatch(setGalleryRequestFail(error)))
 }

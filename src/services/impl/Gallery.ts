@@ -1,6 +1,7 @@
 import {
   IPictureModel
-} from '../models/picture/modelPicture'
+} from '../../models/picture/modelPicture'
+import { IGalleryService } from '../index'
 
 const mockGalleryResponse: { [key: string]: IPictureModel } = {
   '1': { id: '1', url: '/images/1.jpg' },
@@ -10,7 +11,7 @@ const mockGalleryResponse: { [key: string]: IPictureModel } = {
   '5': { id: '5', url: '/images/5.jpg' }
 }
 
-class GalleryService {
+class GalleryService implements IGalleryService {
   // private baseUrl = '/api/picture'
 
   public getPictures = (): Promise<{ [key: string]: IPictureModel }> => {

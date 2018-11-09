@@ -16,6 +16,7 @@
     "comment-format": [false, "check-space"],
     "no-empty-interface": false,
     "prefer-for-of": false,
-    "jsx-no-lambda": false
+    "jsx-no-lambda": false,
+    "no-string-throw": false
   }
 }
