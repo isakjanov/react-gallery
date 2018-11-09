@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e2aae185-60ef-420b-9e27-cb68072c3de0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/gallery/GalleryComponent.test.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/gallery/GalleryDotsComponent.test.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/ui/Preloader.test.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/gallery/GalleryComponent.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/gallery/GalleryComponent.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tslint.json" beforeDir="false" afterPath="$PROJECT_DIR$/tslint.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/gallery/GalleryDotsComponent.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/gallery/GalleryDotsComponent.tsx" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,13 +17,13 @@
     <session id="2002035330">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="7" />
+          <entry key="project.closed" value="8" />
           <entry key="project.open.time.1" value="3" />
           <entry key="project.open.time.11" value="1" />
-          <entry key="project.open.time.2" value="2" />
+          <entry key="project.open.time.2" value="3" />
           <entry key="project.open.time.3" value="1" />
           <entry key="project.open.time.4" value="1" />
-          <entry key="project.opened" value="8" />
+          <entry key="project.opened" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -32,12 +31,12 @@
           <entry key="css" value="2" />
           <entry key="gitignore" value="4" />
           <entry key="jpeg" value="1" />
-          <entry key="json" value="21" />
+          <entry key="json" value="23" />
           <entry key="md" value="1" />
           <entry key="scss" value="12" />
           <entry key="svg" value="9" />
           <entry key="ts" value="56" />
-          <entry key="tsx" value="35" />
+          <entry key="tsx" value="42" />
           <entry key="xml" value="1" />
         </counts>
       </usages-collector>
@@ -46,12 +45,12 @@
           <entry key="CSS" value="2" />
           <entry key="Git file" value="4" />
           <entry key="Image" value="1" />
-          <entry key="JSON" value="18" />
+          <entry key="JSON" value="20" />
           <entry key="Markdown" value="1" />
           <entry key="SCSS" value="12" />
           <entry key="SVG" value="9" />
           <entry key="TypeScript" value="56" />
-          <entry key="TypeScript JSX" value="35" />
+          <entry key="TypeScript JSX" value="42" />
           <entry key="XML" value="1" />
           <entry key="tsconfig" value="3" />
         </counts>
@@ -62,25 +61,25 @@
           <entry key="json" value="52" />
           <entry key="scss" value="735" />
           <entry key="ts" value="4526" />
-          <entry key="tsx" value="5197" />
-          <entry key="txt" value="324" />
+          <entry key="tsx" value="6194" />
+          <entry key="txt" value="357" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Git file" value="19" />
           <entry key="JSON" value="45" />
-          <entry key="PLAIN_TEXT" value="324" />
+          <entry key="PLAIN_TEXT" value="357" />
           <entry key="SCSS" value="735" />
           <entry key="TypeScript" value="4526" />
-          <entry key="TypeScript JSX" value="5197" />
+          <entry key="TypeScript JSX" value="6194" />
           <entry key="tsconfig" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts">
         <counts>
-          <entry key="TsLintLanguageService" value="8" />
-          <entry key="TypeScriptServerServiceImpl" value="8" />
+          <entry key="TsLintLanguageService" value="9" />
+          <entry key="TypeScriptServerServiceImpl" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages" />
@@ -89,41 +88,7 @@
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/components/gallery/GalleryComponent.tsx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-801">
-              <caret line="12" column="18" selection-start-line="12" selection-start-column="2" selection-end-line="12" selection-end-column="18" />
-              <folding>
-                <element signature="e#0#30#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/gallery/GalleryComponent.test.tsx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1185">
-              <caret line="79" column="56" selection-start-line="79" selection-start-column="56" selection-end-line="79" selection-end-column="56" />
-              <folding>
-                <element signature="e#0#32#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/package.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="295">
-              <caret line="26" column="16" selection-start-line="26" selection-start-column="12" selection-end-line="26" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -173,7 +138,6 @@
         <option value="$PROJECT_DIR$/src/icons/IconArrowLeft.tsx" />
         <option value="$PROJECT_DIR$/src/components/gallery/GalleryDotsContainer.ts" />
         <option value="$PROJECT_DIR$/src/icons/IconArrowRight.tsx" />
-        <option value="$PROJECT_DIR$/src/components/gallery/GalleryDotsComponent.tsx" />
         <option value="$PROJECT_DIR$/src/styles/scss/layout.scss" />
         <option value="$PROJECT_DIR$/src/components/ui/Preloader.tsx" />
         <option value="$PROJECT_DIR$/src/styles/scss/gallery.scss" />
@@ -182,6 +146,9 @@
         <option value="$PROJECT_DIR$/tslint.json" />
         <option value="$PROJECT_DIR$/src/components/gallery/GalleryComponent.tsx" />
         <option value="$PROJECT_DIR$/src/components/gallery/GalleryComponent.test.tsx" />
+        <option value="$PROJECT_DIR$/src/components/gallery/GalleryDotsComponent.tsx" />
+        <option value="$PROJECT_DIR$/src/components/gallery/GalleryDotsComponent.test.tsx" />
+        <option value="$PROJECT_DIR$/src/components/ui/Preloader.test.tsx" />
       </list>
     </option>
   </component>
@@ -211,7 +178,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -229,13 +195,6 @@
               <item name="react-gallery" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="react-gallery" type="b2602c69:ProjectViewProjectNode" />
-              <item name="react-gallery" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="gallery" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="react-gallery" type="b2602c69:ProjectViewProjectNode" />
@@ -261,19 +220,21 @@
           <select />
         </subPane>
       </pane>
+      <pane id="AndroidView" />
       <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541693105346" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541747560788" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.tslint" value="$PROJECT_DIR$/node_modules/tslint" />
     <property name="nodejs.jest.jest_package" value="$PROJECT_DIR$/node_modules/react-scripts-ts" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
     <property name="ts.external.directory.path" value="$PROJECT_DIR$/node_modules/typescript/lib" />
   </component>
@@ -298,7 +259,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Jest.&lt;GalleryComponent/&gt;">
+  <component name="RunManager" selected="Jest.&lt;Preloader/&gt;">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <method v="2">
@@ -317,67 +278,66 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="&lt;GalleryComponent/&gt;" type="JavaScriptTestRunnerJest" factoryName="Jest" temporary="true" nameIsGenerated="true">
+    <configuration name="&lt;DotComponent/&gt;.should display baseline dot" type="JavaScriptTestRunnerJest" factoryName="Jest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/src/components/gallery/GalleryDotsComponent.test.tsx" />
+      <test-names>
+        <test-name value="&lt;DotComponent/&gt;" />
+        <test-name value="should display baseline dot" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="&lt;DotComponent/&gt;.should display outlined circle" type="JavaScriptTestRunnerJest" factoryName="Jest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/src/components/gallery/GalleryDotsComponent.test.tsx" />
+      <test-names>
+        <test-name value="&lt;DotComponent/&gt;" />
+        <test-name value="should display outlined circle" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="&lt;GalleryDotsComponent/&gt;" type="JavaScriptTestRunnerJest" factoryName="Jest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
       <working-dir value="$PROJECT_DIR$" />
       <envs />
       <scope-kind value="SUITE" />
-      <test-file value="$PROJECT_DIR$/src/components/gallery/GalleryComponent.test.tsx" />
+      <test-file value="$PROJECT_DIR$/src/components/gallery/GalleryDotsComponent.test.tsx" />
       <test-names>
-        <test-name value="&lt;GalleryComponent/&gt;" />
+        <test-name value="&lt;GalleryDotsComponent/&gt;" />
       </test-names>
       <method v="2" />
     </configuration>
-    <configuration name="&lt;GalleryComponent/&gt;.onComponentMount should be called when component has been mounted" type="JavaScriptTestRunnerJest" factoryName="Jest" temporary="true" nameIsGenerated="true">
+    <configuration name="&lt;Preloader/&gt;" type="JavaScriptTestRunnerJest" factoryName="Jest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="SUITE" />
+      <test-file value="$PROJECT_DIR$/src/components/ui/Preloader.test.tsx" />
+      <test-names>
+        <test-name value="&lt;Preloader/&gt;" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="&lt;Preloader/&gt;.should render elements correctly" type="JavaScriptTestRunnerJest" factoryName="Jest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
       <working-dir value="$PROJECT_DIR$" />
       <envs />
       <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/src/components/gallery/GalleryComponent.test.tsx" />
+      <test-file value="$PROJECT_DIR$/src/components/ui/Preloader.test.tsx" />
       <test-names>
-        <test-name value="&lt;GalleryComponent/&gt;" />
-        <test-name value="onComponentMount should be called when component has been mounted" />
-      </test-names>
-      <method v="2" />
-    </configuration>
-    <configuration name="&lt;GalleryComponent/&gt;.preloader should get right properties" type="JavaScriptTestRunnerJest" factoryName="Jest" temporary="true" nameIsGenerated="true">
-      <node-interpreter value="project" />
-      <node-options value="" />
-      <working-dir value="$PROJECT_DIR$" />
-      <envs />
-      <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/src/components/gallery/GalleryComponent.test.tsx" />
-      <test-names>
-        <test-name value="&lt;GalleryComponent/&gt;" />
-        <test-name value="preloader should get right properties" />
-      </test-names>
-      <method v="2" />
-    </configuration>
-    <configuration name="&lt;GalleryComponent/&gt;.should be rendered right number of pictures" type="JavaScriptTestRunnerJest" factoryName="Jest" temporary="true" nameIsGenerated="true">
-      <node-interpreter value="project" />
-      <node-options value="" />
-      <working-dir value="$PROJECT_DIR$" />
-      <envs />
-      <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/src/components/gallery/GalleryComponent.test.tsx" />
-      <test-names>
-        <test-name value="&lt;GalleryComponent/&gt;" />
-        <test-name value="should be rendered right number of pictures" />
-      </test-names>
-      <method v="2" />
-    </configuration>
-    <configuration name="&lt;GalleryComponent/&gt;.should display all elements" type="JavaScriptTestRunnerJest" factoryName="Jest" temporary="true" nameIsGenerated="true">
-      <node-interpreter value="project" />
-      <node-options value="" />
-      <working-dir value="$PROJECT_DIR$" />
-      <envs />
-      <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/src/components/gallery/GalleryComponent.test.tsx" />
-      <test-names>
-        <test-name value="&lt;GalleryComponent/&gt;" />
-        <test-name value="should display all elements" />
+        <test-name value="&lt;Preloader/&gt;" />
+        <test-name value="should render elements correctly" />
       </test-names>
       <method v="2" />
     </configuration>
@@ -399,19 +359,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Jest.&lt;GalleryComponent/&gt;.should display all elements" />
-      <item itemvalue="Jest.&lt;GalleryComponent/&gt;.should be rendered right number of pictures" />
-      <item itemvalue="Jest.&lt;GalleryComponent/&gt;.preloader should get right properties" />
-      <item itemvalue="Jest.&lt;GalleryComponent/&gt;.onComponentMount should be called when component has been mounted" />
-      <item itemvalue="Jest.&lt;GalleryComponent/&gt;" />
+      <item itemvalue="Jest.&lt;GalleryDotsComponent/&gt;" />
+      <item itemvalue="Jest.&lt;DotComponent/&gt;.should display outlined circle" />
+      <item itemvalue="Jest.&lt;DotComponent/&gt;.should display baseline dot" />
+      <item itemvalue="Jest.&lt;Preloader/&gt;.should render elements correctly" />
+      <item itemvalue="Jest.&lt;Preloader/&gt;" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Jest.&lt;GalleryComponent/&gt;" />
-        <item itemvalue="Jest.&lt;GalleryComponent/&gt;.onComponentMount should be called when component has been mounted" />
-        <item itemvalue="Jest.&lt;GalleryComponent/&gt;.preloader should get right properties" />
-        <item itemvalue="Jest.&lt;GalleryComponent/&gt;.should be rendered right number of pictures" />
-        <item itemvalue="Jest.&lt;GalleryComponent/&gt;.should display all elements" />
+        <item itemvalue="Jest.&lt;Preloader/&gt;" />
+        <item itemvalue="Jest.&lt;Preloader/&gt;.should render elements correctly" />
+        <item itemvalue="Jest.&lt;DotComponent/&gt;.should display baseline dot" />
+        <item itemvalue="Jest.&lt;DotComponent/&gt;.should display outlined circle" />
+        <item itemvalue="Jest.&lt;GalleryDotsComponent/&gt;" />
       </list>
     </recent_temporary>
   </component>
@@ -432,7 +392,8 @@
       <workItem from="1541562683347" duration="1536000" />
       <workItem from="1541570872615" duration="1709000" />
       <workItem from="1541597906056" duration="7749000" />
-      <workItem from="1541679151377" duration="8096000" />
+      <workItem from="1541679151377" duration="9676000" />
+      <workItem from="1541745088220" duration="3212000" />
     </task>
     <task id="LOCAL-00001" summary="added dependencies">
       <created>1541431555896</created>
@@ -539,49 +500,55 @@
       <option name="project" value="LOCAL" />
       <updated>1541690947315</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Wrote tests for GalleryComponent">
+      <created>1541693604801</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1541693604801</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="_GalleryComponent___should_be_rendered_right_number_of_pictures - 2018.11.08 at 22h 04m 17s.xml">
-      <configuration name="&lt;GalleryComponent/&gt;.should be rendered right number of pictures" configurationId="JavaScriptTestRunnerJest" />
+    <history-entry file="_GalleryDotsComponent___should_pass_right_properties_to_DotComponent_depending_on_currentImage - 2018.11.09 at 13h 12m 33s.xml">
+      <configuration name="&lt;GalleryDotsComponent/&gt;.should pass right properties to DotComponent depending on currentImage" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="_GalleryComponent___should_be_rendered_right_number_of_pictures - 2018.11.08 at 22h 04m 33s.xml">
-      <configuration name="&lt;GalleryComponent/&gt;.should be rendered right number of pictures" configurationId="JavaScriptTestRunnerJest" />
+    <history-entry file="_GalleryDotsComponent___should_pass_right_properties_to_DotComponent_depending_on_currentImage - 2018.11.09 at 13h 14m 01s.xml">
+      <configuration name="&lt;GalleryDotsComponent/&gt;.should pass right properties to DotComponent depending on currentImage" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="_GalleryComponent___should_be_rendered_right_number_of_pictures - 2018.11.08 at 22h 05m 22s.xml">
-      <configuration name="&lt;GalleryComponent/&gt;.should be rendered right number of pictures" configurationId="JavaScriptTestRunnerJest" />
+    <history-entry file="_GalleryDotsComponent___should_pass_right_properties_to_DotComponent_depending_on_currentImage - 2018.11.09 at 13h 14m 55s.xml">
+      <configuration name="&lt;GalleryDotsComponent/&gt;.should pass right properties to DotComponent depending on currentImage" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="_GalleryComponent___should_be_rendered_right_number_of_pictures - 2018.11.08 at 22h 05m 40s.xml">
-      <configuration name="&lt;GalleryComponent/&gt;.should be rendered right number of pictures" configurationId="JavaScriptTestRunnerJest" />
+    <history-entry file="_GalleryDotsComponent__ - 2018.11.09 at 13h 15m 05s.xml">
+      <configuration name="&lt;GalleryDotsComponent/&gt;" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="_GalleryComponent___should_be_rendered_right_number_of_pictures - 2018.11.08 at 22h 06m 36s.xml">
-      <configuration name="&lt;GalleryComponent/&gt;.should be rendered right number of pictures" configurationId="JavaScriptTestRunnerJest" />
+    <history-entry file="_DotComponent___should_display_outlined_circle - 2018.11.09 at 13h 18m 20s.xml">
+      <configuration name="&lt;DotComponent/&gt;.should display outlined circle" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="_GalleryComponent___should_be_rendered_right_number_of_pictures - 2018.11.08 at 22h 07m 08s.xml">
-      <configuration name="&lt;GalleryComponent/&gt;.should be rendered right number of pictures" configurationId="JavaScriptTestRunnerJest" />
+    <history-entry file="_DotComponent___should_display_baseline_dot - 2018.11.09 at 13h 18m 54s.xml">
+      <configuration name="&lt;DotComponent/&gt;.should display baseline dot" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="_GalleryComponent___should_be_rendered_right_number_of_pictures - 2018.11.08 at 22h 07m 38s.xml">
-      <configuration name="&lt;GalleryComponent/&gt;.should be rendered right number of pictures" configurationId="JavaScriptTestRunnerJest" />
+    <history-entry file="_DotComponent___should_display_baseline_dot - 2018.11.09 at 13h 19m 20s.xml">
+      <configuration name="&lt;DotComponent/&gt;.should display baseline dot" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="_GalleryComponent___preloader_should_get_right_properties - 2018.11.08 at 22h 10m 11s.xml">
-      <configuration name="&lt;GalleryComponent/&gt;.preloader should get right properties" configurationId="JavaScriptTestRunnerJest" />
+    <history-entry file="_Preloader___should_render_elements_correctly - 2018.11.09 at 13h 21m 54s.xml">
+      <configuration name="&lt;Preloader/&gt;.should render elements correctly" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="_GalleryComponent___onComponentMount_should_be_called_when_component_has_been_mounted - 2018.11.08 at 22h 12m 37s.xml">
-      <configuration name="&lt;GalleryComponent/&gt;.onComponentMount should be called when component has been mounted" configurationId="JavaScriptTestRunnerJest" />
+    <history-entry file="_Preloader___should_render_elements_correctly - 2018.11.09 at 13h 22m 18s.xml">
+      <configuration name="&lt;Preloader/&gt;.should render elements correctly" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="_GalleryComponent__ - 2018.11.08 at 22h 12m 47s.xml">
-      <configuration name="&lt;GalleryComponent/&gt;" configurationId="JavaScriptTestRunnerJest" />
+    <history-entry file="_Preloader__ - 2018.11.09 at 13h 23m 40s.xml">
+      <configuration name="&lt;Preloader/&gt;" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36927000" />
+    <option name="totallyTimeSpent" value="41719000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="777" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21324718" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21324718" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -652,20 +619,14 @@
     <MESSAGE value="added picture position indicator" />
     <MESSAGE value="fixed styles" />
     <MESSAGE value="added preloader" />
-    <option name="LAST_COMMIT_MESSAGE" value="added preloader" />
+    <MESSAGE value="Wrote tests for GalleryComponent" />
+    <option name="LAST_COMMIT_MESSAGE" value="Wrote tests for GalleryComponent" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/state/types.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="14" column="16" selection-start-line="14" selection-start-column="2" selection-end-line="14" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/App.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="46" selection-start-line="16" selection-start-column="46" selection-end-line="16" selection-end-column="46" />
         </state>
       </provider>
     </entry>
@@ -742,12 +703,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/icons/baseline-dot-24px.svg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/icons/outline-dot-24px.svg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/icons/baseline-dot-24px.svg" />
+    <entry file="file://$PROJECT_DIR$/src/icons/outline-dot-24px.svg" />
     <entry file="file://$PROJECT_DIR$/src/state/gallery/galleryReducer.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="503">
@@ -759,9 +716,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="16" column="32" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="32" />
-          <folding>
-            <element signature="e#0#37#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -779,12 +733,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/icons/baseline-arrow_back_ios-24px.svg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/icons/baseline-arrow_forward_ios-24px.svg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/icons/baseline-arrow_back_ios-24px.svg" />
+    <entry file="file://$PROJECT_DIR$/src/icons/baseline-arrow_forward_ios-24px.svg" />
     <entry file="file://$PROJECT_DIR$/src/icons/IconArrowLeft.tsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
@@ -803,16 +753,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="113">
           <caret line="9" column="21" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/ui/Preloader.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="1" lean-forward="true" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
-          <folding>
-            <element signature="e#0#30#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -844,23 +784,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/gallery/GalleryDotsComponent.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="6" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
-          <folding>
-            <element signature="e#0#30#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/gallery/GalleryDotsContainer.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="16" column="50" lean-forward="true" selection-start-line="16" selection-start-column="50" selection-end-line="16" selection-end-column="50" />
-          <folding>
-            <element signature="e#0#37#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -873,27 +800,74 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="295">
-          <caret line="26" column="16" selection-start-line="26" selection-start-column="12" selection-end-line="26" selection-end-column="16" />
+        <state relative-caret-position="203">
+          <caret line="18" column="29" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/gallery/GalleryComponent.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="847">
+          <caret line="71" column="32" selection-start-line="71" selection-start-column="32" selection-end-line="71" selection-end-column="32" />
+          <folding>
+            <element signature="e#0#30#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/gallery/GalleryComponent.test.tsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1185">
-          <caret line="79" column="56" selection-start-line="79" selection-start-column="56" selection-end-line="79" selection-end-column="56" />
+        <state relative-caret-position="120">
+          <caret line="8" column="30" lean-forward="true" selection-start-line="8" selection-end-line="9" />
           <folding>
             <element signature="e#0#32#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/gallery/GalleryComponent.tsx">
+    <entry file="file://$PROJECT_DIR$/src/components/App.tsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-801">
-          <caret line="12" column="18" selection-start-line="12" selection-start-column="2" selection-end-line="12" selection-end-column="18" />
+        <state relative-caret-position="165">
+          <caret line="16" column="46" selection-start-line="16" selection-start-column="46" selection-end-line="16" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/ui/Preloader.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="13" />
           <folding>
             <element signature="e#0#30#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/gallery/GalleryDotsComponent.test.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="34" lean-forward="true" selection-end-line="34" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/gallery/GalleryDotsComponent.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="29" column="27" selection-start-line="29" selection-start-column="12" selection-end-line="29" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#30#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/ui/Preloader.test.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="15" selection-start-line="14" selection-start-column="15" selection-end-line="14" selection-end-column="15" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
           </folding>
         </state>
       </provider>

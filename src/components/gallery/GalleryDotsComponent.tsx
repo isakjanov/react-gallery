@@ -9,8 +9,7 @@ interface IGalleryDotsComponentProps {
 }
 
 interface IDotComponentProps {
-  index: number
-  currentImage: number
+  selected: boolean
 }
 
 const GalleryDotsComponent = (props: IGalleryDotsComponentProps) => {
@@ -18,14 +17,16 @@ const GalleryDotsComponent = (props: IGalleryDotsComponentProps) => {
     <div className={`flex flex-row ${props.className}`}>
       {
         Array.from(new Array(props.count))
-          .map((value, index) => (<DotComponent index={index} currentImage={props.currentImage}/>))
+          .map((value, index) => (
+            <DotComponent selected={index === props.currentImage} key={`dot-${index}`}/>)
+          )
       }
     </div>
   )
 }
 
-const DotComponent = (props: IDotComponentProps) => {
-  if (props.index === props.currentImage) {
+export const DotComponent = (props: IDotComponentProps) => {
+  if (props.selected) {
     return <IconBaseLineDot/>
   }
   return <IconOutLineDot/>
