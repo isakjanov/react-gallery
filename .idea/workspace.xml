@@ -2,15 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e2aae185-60ef-420b-9e27-cb68072c3de0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/services/index.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/gallery/GalleryContainer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/gallery/GalleryContainer.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/Gallery.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/impl/Gallery.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/state/gallery/galleryActions.test.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/state/gallery/galleryActions.test.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/state/gallery/galleryActions.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/state/gallery/galleryActions.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tslint.json" beforeDir="false" afterPath="$PROJECT_DIR$/tslint.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/gallery/GalleryComponent.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/gallery/GalleryComponent.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/impl/Gallery.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/impl/Gallery.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/scss/gallery.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/scss/gallery.scss" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -38,10 +33,10 @@
           <entry key="jpeg" value="1" />
           <entry key="json" value="27" />
           <entry key="md" value="1" />
-          <entry key="scss" value="12" />
+          <entry key="scss" value="13" />
           <entry key="svg" value="9" />
-          <entry key="ts" value="73" />
-          <entry key="tsx" value="42" />
+          <entry key="ts" value="74" />
+          <entry key="tsx" value="43" />
           <entry key="xml" value="1" />
         </counts>
       </usages-collector>
@@ -52,10 +47,10 @@
           <entry key="Image" value="1" />
           <entry key="JSON" value="24" />
           <entry key="Markdown" value="1" />
-          <entry key="SCSS" value="12" />
+          <entry key="SCSS" value="13" />
           <entry key="SVG" value="9" />
-          <entry key="TypeScript" value="73" />
-          <entry key="TypeScript JSX" value="42" />
+          <entry key="TypeScript" value="74" />
+          <entry key="TypeScript JSX" value="43" />
           <entry key="XML" value="1" />
           <entry key="tsconfig" value="3" />
         </counts>
@@ -64,20 +59,20 @@
         <counts>
           <entry key="gitignore" value="19" />
           <entry key="json" value="71" />
-          <entry key="scss" value="735" />
-          <entry key="ts" value="6069" />
-          <entry key="tsx" value="6194" />
-          <entry key="txt" value="382" />
+          <entry key="scss" value="756" />
+          <entry key="ts" value="6071" />
+          <entry key="tsx" value="6363" />
+          <entry key="txt" value="411" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Git file" value="19" />
           <entry key="JSON" value="64" />
-          <entry key="PLAIN_TEXT" value="382" />
-          <entry key="SCSS" value="735" />
-          <entry key="TypeScript" value="6069" />
-          <entry key="TypeScript JSX" value="6194" />
+          <entry key="PLAIN_TEXT" value="411" />
+          <entry key="SCSS" value="756" />
+          <entry key="TypeScript" value="6071" />
+          <entry key="TypeScript JSX" value="6363" />
           <entry key="tsconfig" value="7" />
         </counts>
       </usages-collector>
@@ -94,13 +89,13 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/state/gallery/galleryActions.test.ts">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/components/gallery/GalleryComponent.tsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="99">
-              <caret line="33" column="1" lean-forward="true" selection-start-line="33" selection-start-column="1" selection-end-line="33" selection-end-column="1" />
+            <state relative-caret-position="268">
+              <caret line="93" column="38" selection-start-line="93" selection-start-column="38" selection-end-line="93" selection-end-column="38" />
               <folding>
-                <element signature="e#0#141#0" expanded="true" />
+                <element signature="e#0#30#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -109,29 +104,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/services/impl/Gallery.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="18" column="24" lean-forward="true" selection-start-line="18" selection-start-column="24" selection-end-line="18" selection-end-column="24" />
+            <state relative-caret-position="255">
+              <caret line="20" column="8" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="8" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/state/gallery/galleryActions.ts">
+        <entry file="file://$PROJECT_DIR$/src/styles/scss/gallery.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="293">
-              <caret line="46" column="9" selection-start-line="46" selection-start-column="4" selection-end-line="46" selection-end-column="9" />
-              <folding>
-                <element signature="e#0#67#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/tslint.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" column="28" lean-forward="true" selection-start-line="19" selection-start-column="28" selection-end-line="19" selection-end-column="28" />
+            <state relative-caret-position="292">
+              <caret line="30" column="19" selection-start-line="30" selection-start-column="19" selection-end-line="30" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -185,10 +168,8 @@
         <option value="$PROJECT_DIR$/src/icons/IconArrowRight.tsx" />
         <option value="$PROJECT_DIR$/src/styles/scss/layout.scss" />
         <option value="$PROJECT_DIR$/src/components/ui/Preloader.tsx" />
-        <option value="$PROJECT_DIR$/src/styles/scss/gallery.scss" />
         <option value="$PROJECT_DIR$/src/components/gallery/GalleryComponent.test.ts" />
         <option value="$PROJECT_DIR$/tsconfig.json" />
-        <option value="$PROJECT_DIR$/src/components/gallery/GalleryComponent.tsx" />
         <option value="$PROJECT_DIR$/src/components/gallery/GalleryComponent.test.tsx" />
         <option value="$PROJECT_DIR$/src/components/gallery/GalleryDotsComponent.tsx" />
         <option value="$PROJECT_DIR$/src/components/gallery/GalleryDotsComponent.test.tsx" />
@@ -196,11 +177,13 @@
         <option value="$PROJECT_DIR$/src/state/gallery/galleryReducer.test.ts" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/src/services/index.ts" />
-        <option value="$PROJECT_DIR$/src/services/impl/Gallery.ts" />
         <option value="$PROJECT_DIR$/src/components/gallery/GalleryContainer.ts" />
         <option value="$PROJECT_DIR$/src/state/gallery/galleryActions.ts" />
         <option value="$PROJECT_DIR$/src/state/gallery/galleryActions.test.ts" />
         <option value="$PROJECT_DIR$/tslint.json" />
+        <option value="$PROJECT_DIR$/src/styles/scss/gallery.scss" />
+        <option value="$PROJECT_DIR$/src/services/impl/Gallery.ts" />
+        <option value="$PROJECT_DIR$/src/components/gallery/GalleryComponent.tsx" />
       </list>
     </option>
   </component>
@@ -282,6 +265,19 @@
               <item name="state" type="462c0819:PsiDirectoryNode" />
               <item name="gallery" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="react-gallery" type="b2602c69:ProjectViewProjectNode" />
+              <item name="react-gallery" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="styles" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="react-gallery" type="b2602c69:ProjectViewProjectNode" />
+              <item name="react-gallery" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="styles" type="462c0819:PsiDirectoryNode" />
+              <item name="scss" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -292,7 +288,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541764724941" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541819432618" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.tslint" value="$PROJECT_DIR$/node_modules/tslint" />
@@ -327,7 +323,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Jest.Gallery actions">
+  <component name="RunManager" selected="Jest.&lt;GalleryComponent/&gt;.renders error message">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <method v="2">
@@ -397,15 +393,16 @@
       </test-names>
       <method v="2" />
     </configuration>
-    <configuration name="galleryReducer tests" type="JavaScriptTestRunnerJest" factoryName="Jest" temporary="true" nameIsGenerated="true">
+    <configuration name="&lt;GalleryComponent/&gt;.renders error message" type="JavaScriptTestRunnerJest" factoryName="Jest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
       <working-dir value="$PROJECT_DIR$" />
       <envs />
-      <scope-kind value="SUITE" />
-      <test-file value="$PROJECT_DIR$/src/state/gallery/galleryReducer.test.ts" />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/src/components/gallery/GalleryComponent.test.tsx" />
       <test-names>
-        <test-name value="galleryReducer tests" />
+        <test-name value="&lt;GalleryComponent/&gt;" />
+        <test-name value="renders error message" />
       </test-names>
       <method v="2" />
     </configuration>
@@ -427,19 +424,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Jest.galleryReducer tests" />
       <item itemvalue="Jest.Gallery actions" />
       <item itemvalue="Jest.Gallery actions.fetchGallery creates ACTION_GALLERY_REQUEST action" />
       <item itemvalue="Jest.Gallery async actions.fetchGallery creates ACTION_GALLERY_REQUEST action" />
       <item itemvalue="Jest.Gallery actions.fetchGallery creates ACTION_GALLERY_REQUEST and ACTION_GALLERY_REQUEST_FAIL actions" />
+      <item itemvalue="Jest.&lt;GalleryComponent/&gt;.renders error message" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Jest.&lt;GalleryComponent/&gt;.renders error message" />
         <item itemvalue="Jest.Gallery actions" />
         <item itemvalue="Jest.Gallery actions.fetchGallery creates ACTION_GALLERY_REQUEST and ACTION_GALLERY_REQUEST_FAIL actions" />
         <item itemvalue="Jest.Gallery actions.fetchGallery creates ACTION_GALLERY_REQUEST action" />
         <item itemvalue="Jest.Gallery async actions.fetchGallery creates ACTION_GALLERY_REQUEST action" />
-        <item itemvalue="Jest.galleryReducer tests" />
       </list>
     </recent_temporary>
   </component>
@@ -462,7 +459,7 @@
       <workItem from="1541597906056" duration="7749000" />
       <workItem from="1541679151377" duration="9676000" />
       <workItem from="1541745088220" duration="5432000" />
-      <workItem from="1541761764767" duration="2896000" />
+      <workItem from="1541761764767" duration="4001000" />
     </task>
     <task id="LOCAL-00001" summary="added dependencies">
       <created>1541431555896</created>
@@ -597,16 +594,17 @@
       <option name="project" value="LOCAL" />
       <updated>1541750252784</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Wrote tests for async actions">
+      <created>1541764776675</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1541764776675</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="galleryReducer_tests_Handles_ACTION_GALLERY_REQUEST_FAIL - 2018.11.09 at 13h 38m 18s.xml">
-      <configuration name="galleryReducer tests.Handles ACTION_GALLERY_REQUEST_FAIL" configurationId="JavaScriptTestRunnerJest" />
-    </history-entry>
-    <history-entry file="galleryReducer_tests_Handles_ACTION_GALLERY_SET_CURRENT_PICTURE - 2018.11.09 at 13h 39m 51s.xml">
-      <configuration name="galleryReducer tests.Handles ACTION_GALLERY_SET_CURRENT_PICTURE" configurationId="JavaScriptTestRunnerJest" />
-    </history-entry>
     <history-entry file="galleryReducer_tests - 2018.11.09 at 13h 39m 59s.xml">
       <configuration name="galleryReducer tests" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
@@ -631,15 +629,21 @@
     <history-entry file="Gallery_actions_fetchGallery_creates_ACTION_GALLERY_REQUEST_and_ACTION_GALLERY_REQUEST_FAIL_actions - 2018.11.09 at 17h 57m 18s.xml">
       <configuration name="Gallery actions.fetchGallery creates ACTION_GALLERY_REQUEST and ACTION_GALLERY_REQUEST_FAIL actions" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
+    <history-entry file="Gallery_actions_fetchGallery_creates_ACTION_GALLERY_REQUEST_and_ACTION_GALLERY_REQUEST_FAIL_actions - 2018.11.09 at 17h 59m 01s.xml">
+      <configuration name="Gallery actions.fetchGallery creates ACTION_GALLERY_REQUEST and ACTION_GALLERY_REQUEST_FAIL actions" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="Gallery_actions - 2018.11.09 at 17h 59m 11s.xml">
+      <configuration name="Gallery actions" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="46835000" />
+    <option name="totallyTimeSpent" value="47940000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="777" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21324718" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21324718" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -714,7 +718,8 @@
     <MESSAGE value="Wrote tests for components" />
     <MESSAGE value="Wrote tests for reducers" />
     <MESSAGE value="Wrote tests for actions" />
-    <option name="LAST_COMMIT_MESSAGE" value="Wrote tests for actions" />
+    <MESSAGE value="Wrote tests for async actions" />
+    <option name="LAST_COMMIT_MESSAGE" value="Wrote tests for async actions" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
@@ -808,13 +813,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/styles/scss/gallery.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="373">
-          <caret line="26" column="15" selection-start-line="26" selection-start-column="15" selection-end-line="26" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -840,16 +838,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="7" column="1" lean-forward="true" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/gallery/GalleryComponent.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="847">
-          <caret line="71" column="32" selection-start-line="71" selection-start-column="32" selection-end-line="71" selection-end-column="32" />
-          <folding>
-            <element signature="e#0#30#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -956,6 +944,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/tslint.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="28" lean-forward="true" selection-start-line="19" selection-start-column="28" selection-end-line="19" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/state/gallery/galleryActions.test.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-397">
+          <caret line="33" column="1" lean-forward="true" selection-start-line="33" selection-start-column="1" selection-end-line="33" selection-end-column="1" />
+          <folding>
+            <element signature="e#0#141#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/state/gallery/galleryActions.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="293">
@@ -966,27 +971,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/styles/scss/gallery.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="292">
+          <caret line="30" column="19" selection-start-line="30" selection-start-column="19" selection-end-line="30" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/services/impl/Gallery.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="18" column="24" lean-forward="true" selection-start-line="18" selection-start-column="24" selection-end-line="18" selection-end-column="24" />
+        <state relative-caret-position="255">
+          <caret line="20" column="8" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="8" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/state/gallery/galleryActions.test.ts">
+    <entry file="file://$PROJECT_DIR$/src/components/gallery/GalleryComponent.tsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="99">
-          <caret line="33" column="1" lean-forward="true" selection-start-line="33" selection-start-column="1" selection-end-line="33" selection-end-column="1" />
+        <state relative-caret-position="268">
+          <caret line="93" column="38" selection-start-line="93" selection-start-column="38" selection-end-line="93" selection-end-column="38" />
           <folding>
-            <element signature="e#0#141#0" expanded="true" />
+            <element signature="e#0#30#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tslint.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="28" lean-forward="true" selection-start-line="19" selection-start-column="28" selection-end-line="19" selection-end-column="28" />
         </state>
       </provider>
     </entry>

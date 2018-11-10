@@ -79,4 +79,18 @@ describe('<GalleryComponent/>', () => {
 
     expect(onComponentMountMock.calledOnce).toEqual(true)
   })
+
+  it('renders error message', () => {
+    const wrapper = enzyme.shallow(
+      <GalleryComponent
+        pictures={mockPictures}
+        requesting={false}
+        error={'test error'}
+        currentPicture={0}
+        onComponentMount={() => null}
+        onCurrentPictureChange={() => null}/>
+    )
+
+    expect(wrapper.find('.error').text()).toEqual('test error')
+  })
 })

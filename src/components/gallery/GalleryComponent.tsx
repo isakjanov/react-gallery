@@ -26,41 +26,44 @@ export default class GalleryComponent extends React.Component<IGalleryComponentP
 
     this.assignTransitionCompleteListener()
 
-    const { pictures, requesting } = this.props
+    const { pictures, requesting, error } = this.props
 
     return (
-      <>
-        <div className='gallery flex flex-row justify-center align-items-center'>
-          <div onClick={this.handlePrevClick} className='cursor--pointer'>
-            <IconArrowLeft/>
-          </div>
-          <div className='container'>
-            <ul id='carousel' className='animate'>
-              {pictures.map((it, index) => (
-                <li className='animate' key={`gallery-image-${it.id}`}>
-                  <img src={it.url}/>
-                </li>
-              ))}
-            </ul>
+      <div className='gallery flex flex-row justify-center align-items-center'>
 
-            <div className='absolute gallery-dots flex justify-center'>
-              <GalleryDotsContainer/>
-            </div>
-            <div className='absolute preloader flex justify-center align-items-center'>
-              <Preloader loading={requesting}/>
-            </div>
-          </div>
-          <div onClick={this.handleNextClick} className='cursor--pointer'>
-            <IconArrowRight/>
-          </div>
+        <div onClick={this.handlePrevClick} className='cursor--pointer'>
+          <IconArrowLeft/>
         </div>
-      </>
+        <div className='container'>
+          <ul id='carousel' className='animate'>
+            {pictures.map((it, index) => (
+              <li className='animate' key={`gallery-image-${it.id}`}>
+                <img src={it.url}/>
+              </li>
+            ))}
+          </ul>
+
+          <div className='absolute gallery-dots flex justify-center'>
+            <GalleryDotsContainer/>
+          </div>
+          <div className='absolute preloader flex justify-center align-items-center'>
+            <Preloader loading={requesting}/>
+          </div>
+          {error && (
+            <div className='error flex justify-center'>{error}</div>
+          )}
+        </div>
+        <div onClick={this.handleNextClick} className='cursor--pointer'>
+          <IconArrowRight/>
+        </div>
+
+      </div>
     )
   }
 
   private handleNextClick = () => {
     const carouselNode = document.getElementById('carousel')
-    if (!carouselNode || this.sliding) {
+    if (!carouselNode || this.sliding || this.props.pictures.length === 0) {
       return
     }
     this.sliding = true
@@ -88,7 +91,7 @@ export default class GalleryComponent extends React.Component<IGalleryComponentP
 
   private handlePrevClick = () => {
     const carouselNode = document.getElementById('carousel')
-    if (!carouselNode || this.sliding) {
+    if (!carouselNode || this.sliding || this.props.pictures.length === 0) {
       return
     }
     this.sliding = true
