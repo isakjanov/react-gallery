@@ -17,8 +17,8 @@ class GalleryService implements IGalleryService {
   public getPictures = (): Promise<{ [key: string]: IPictureModel }> => {
     return new Promise((resolve, reject) => {
       setTimeout(() => {
-        //resolve(mockGalleryResponse)
-        reject('Failed to load pictures')
+        resolve(mockGalleryResponse)
+        //reject('Failed to load pictures')
       }, 1000)
     })
 

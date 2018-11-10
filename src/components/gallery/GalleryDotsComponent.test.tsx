@@ -13,7 +13,7 @@ describe('<GalleryDotsComponent/>', () => {
         count={5}/>
     )
 
-    expect(wrapper.find('DotComponent').length).toEqual(5)
+    expect(wrapper.find(DotComponent).length).toEqual(5)
   })
 
   it('should pass right properties to DotComponent depending on currentImage', () => {
@@ -23,12 +23,12 @@ describe('<GalleryDotsComponent/>', () => {
         count={2}/>
     )
 
-    expect(wrapper.find('DotComponent').at(0).prop('selected')).toEqual(true)
-    expect(wrapper.find('DotComponent').at(1).prop('selected')).toEqual(false)
+    expect(wrapper.find(DotComponent).at(0).prop('selected')).toEqual(true)
+    expect(wrapper.find(DotComponent).at(1).prop('selected')).toEqual(false)
 
     wrapper.setProps({currentImage: 1})
-    expect(wrapper.find('DotComponent').at(0).prop('selected')).toEqual(false)
-    expect(wrapper.find('DotComponent').at(1).prop('selected')).toEqual(true)
+    expect(wrapper.find(DotComponent).at(0).prop('selected')).toEqual(false)
+    expect(wrapper.find(DotComponent).at(1).prop('selected')).toEqual(true)
   })
 
 })

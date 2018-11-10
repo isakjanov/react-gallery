@@ -17,14 +17,22 @@ interface IGalleryComponentProps {
 export default class GalleryComponent extends React.Component<IGalleryComponentProps> {
 
   private sliding = false
+  private refCarousel: any
+
+  constructor(props: IGalleryComponentProps) {
+    super(props)
+    this.refCarousel = React.createRef()
+  }
 
   public componentDidMount() {
     this.props.onComponentMount()
   }
 
-  public render() {
-
+  public componentDidUpdate() {
     this.assignTransitionCompleteListener()
+  }
+
+  public render() {
 
     const { pictures, requesting, error } = this.props
 
@@ -35,7 +43,7 @@ export default class GalleryComponent extends React.Component<IGalleryComponentP
           <IconArrowLeft/>
         </div>
         <div className='container'>
-          <ul id='carousel' className='animate'>
+          <ul id='carousel' className='animate' ref={this.refCarousel}>
             {pictures.map((it, index) => (
               <li className='animate' key={`gallery-image-${it.id}`}>
                 <img src={it.url}/>
@@ -62,13 +70,12 @@ export default class GalleryComponent extends React.Component<IGalleryComponentP
   }
 
   private handleNextClick = () => {
-    const carouselNode = document.getElementById('carousel')
-    if (!carouselNode || this.sliding || this.props.pictures.length === 0) {
+    if (this.sliding || this.props.pictures.length === 0) {
       return
     }
     this.sliding = true
 
-    const picturesNodes = carouselNode.children
+    const picturesNodes = this.refCarousel.current.children
     const { currentPicture, pictures, onCurrentPictureChange } = this.props
     const nextPicture = currentPicture === pictures.length - 1 ? 0 : currentPicture + 1
 
@@ -90,13 +97,12 @@ export default class GalleryComponent extends React.Component<IGalleryComponentP
   }
 
   private handlePrevClick = () => {
-    const carouselNode = document.getElementById('carousel')
-    if (!carouselNode || this.sliding || this.props.pictures.length === 0) {
+    if (this.sliding || this.props.pictures.length === 0) {
       return
     }
     this.sliding = true
 
-    const picturesNodes = carouselNode.children
+    const picturesNodes = this.refCarousel.current.children
     const { currentPicture, pictures, onCurrentPictureChange } = this.props
     const nextPicture = currentPicture === 0 ? pictures.length - 1 : currentPicture - 1
 
@@ -118,20 +124,17 @@ export default class GalleryComponent extends React.Component<IGalleryComponentP
   }
 
   private assignTransitionCompleteListener = () => {
-    if (!document.getElementById) {
+    const carousel = this.refCarousel.current
+    if (!carousel) {
       return
     }
+    const picturesNodes = carousel.children
 
-    const carouselNode = document.getElementById('carousel')
-    if (!carouselNode) {
-      return
-    }
-
-    for (let i = 0; i < carouselNode.children.length; i++) {
-      carouselNode.children[i].addEventListener('transitionend', this.slidingCompleted, true)
-      carouselNode.children[i].addEventListener('webkitTransitionEnd', this.slidingCompleted, true)
-      carouselNode.children[i].addEventListener('oTransitionEnd', this.slidingCompleted, true)
-      carouselNode.children[i].addEventListener('MSTransitionEnd', this.slidingCompleted, true)
+    for (let i = 0; i < picturesNodes.length; i++) {
+      picturesNodes[i].addEventListener('transitionend', this.slidingCompleted, true)
+      picturesNodes[i].addEventListener('webkitTransitionEnd', this.slidingCompleted, true)
+      picturesNodes[i].addEventListener('oTransitionEnd', this.slidingCompleted, true)
+      picturesNodes[i].addEventListener('MSTransitionEnd', this.slidingCompleted, true)
     }
   }
 
