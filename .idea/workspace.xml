@@ -3,13 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="e2aae185-60ef-420b-9e27-cb68072c3de0" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/gallery/GalleryComponent.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/gallery/GalleryComponent.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/impl/Gallery.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/impl/Gallery.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/state/gallery/galleryActions.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/state/gallery/galleryActions.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/state/gallery/galleryReducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/state/gallery/galleryReducer.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/scss/gallery.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/scss/gallery.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/scss/layout.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/scss/layout.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -36,7 +30,7 @@
           <entry key="gitignore" value="4" />
           <entry key="jpeg" value="1" />
           <entry key="json" value="28" />
-          <entry key="md" value="1" />
+          <entry key="md" value="2" />
           <entry key="scss" value="15" />
           <entry key="svg" value="9" />
           <entry key="ts" value="89" />
@@ -50,7 +44,7 @@
           <entry key="Git file" value="4" />
           <entry key="Image" value="1" />
           <entry key="JSON" value="25" />
-          <entry key="Markdown" value="1" />
+          <entry key="Markdown" value="2" />
           <entry key="SCSS" value="15" />
           <entry key="SVG" value="9" />
           <entry key="TypeScript" value="89" />
@@ -63,17 +57,19 @@
         <counts>
           <entry key="gitignore" value="19" />
           <entry key="json" value="72" />
+          <entry key="md" value="136" />
           <entry key="scss" value="903" />
           <entry key="ts" value="7003" />
           <entry key="tsx" value="7240" />
-          <entry key="txt" value="476" />
+          <entry key="txt" value="490" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Git file" value="19" />
           <entry key="JSON" value="65" />
-          <entry key="PLAIN_TEXT" value="476" />
+          <entry key="Markdown" value="136" />
+          <entry key="PLAIN_TEXT" value="490" />
           <entry key="SCSS" value="903" />
           <entry key="TypeScript" value="7003" />
           <entry key="TypeScript JSX" value="7240" />
@@ -92,7 +88,20 @@
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="255">
+                <caret line="17" column="32" lean-forward="true" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -134,7 +143,6 @@
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/index.tsx" />
         <option value="$PROJECT_DIR$/src/styles/scss/index.scss" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/icons/IconBaselineDot.tsx" />
         <option value="$PROJECT_DIR$/src/icons/IconOutlineDot.tsx" />
         <option value="$PROJECT_DIR$/src/icons/IconArrowLeft.tsx" />
@@ -160,6 +168,7 @@
         <option value="$PROJECT_DIR$/src/components/gallery/GalleryComponent.tsx" />
         <option value="$PROJECT_DIR$/src/styles/scss/layout.scss" />
         <option value="$PROJECT_DIR$/src/styles/scss/gallery.scss" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -245,7 +254,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541825524977" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541826244486" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.tslint" value="$PROJECT_DIR$/node_modules/tslint" />
@@ -415,7 +424,7 @@
       <workItem from="1541597906056" duration="7749000" />
       <workItem from="1541679151377" duration="9676000" />
       <workItem from="1541745088220" duration="5432000" />
-      <workItem from="1541761764767" duration="9682000" />
+      <workItem from="1541761764767" duration="10141000" />
     </task>
     <task id="LOCAL-00001" summary="added dependencies">
       <created>1541431555896</created>
@@ -571,7 +580,14 @@
       <option name="project" value="LOCAL" />
       <updated>1541822942690</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Added comments">
+      <created>1541825795848</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1541825795848</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -607,10 +623,11 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="53621000" />
+    <option name="totallyTimeSpent" value="54080000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="777" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21324718" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -644,6 +661,39 @@
       <window_info anchor="right" id="Theme Preview" order="9" />
       <window_info anchor="right" id="SvgViewer" order="10" />
     </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21324718" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info id="Capture Tool" order="6" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.5109489" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.5591241" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="TypeScript" order="7" weight="0.329927" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.5284672" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="RNConsole" order="10" />
+      <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="12" weight="0.5970803" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Mongo Explorer" order="5" />
+      <window_info anchor="right" id="Maven Projects" order="6" />
+      <window_info anchor="right" id="Database" order="7" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+      <window_info anchor="right" id="Theme Preview" order="9" />
+      <window_info anchor="right" id="SvgViewer" order="10" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -690,7 +740,8 @@
     <MESSAGE value="Wrote tests for async actions" />
     <MESSAGE value="Displayed error message&#10;Wrote tests for error message" />
     <MESSAGE value="fixed tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed tests" />
+    <MESSAGE value="Added comments" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added comments" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
@@ -711,16 +762,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="1" column="18" lean-forward="true" selection-start-line="1" selection-start-column="18" selection-end-line="1" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="165">
-            <caret line="11" column="32" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="32" />
-          </first_editor>
-          <second_editor />
         </state>
       </provider>
     </entry>
@@ -972,6 +1013,16 @@
           <folding>
             <element signature="e#0#30#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="255">
+            <caret line="17" column="32" lean-forward="true" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
