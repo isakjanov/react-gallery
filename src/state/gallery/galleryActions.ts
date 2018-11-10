@@ -28,6 +28,7 @@ export interface IGalleryActionSetCurrentPicture extends IGalleryAction{
   index: number
 }
 
+// Async action. Load pictures
 export const fetchGallery = (service: IGalleryService) => (dispatch: any) => {
   dispatch(requestGallery())
   return service.getPictures()
@@ -35,12 +36,14 @@ export const fetchGallery = (service: IGalleryService) => (dispatch: any) => {
     .catch(error => dispatch(setGalleryRequestFail(error)))
 }
 
+// Broadcasts that pictures are being loaded
 export function requestGallery(): IGalleryActionRequest {
   return {
     type: ACTION_GALLERY_REQUEST
   }
 }
 
+// Broadcasts that pictures have been loaded
 export function setGalleryRequestSuccess(items: { [key: string]: IPictureModel }) {
   return {
     type: ACTION_GALLERY_REQUEST_SUCCESS,
@@ -48,6 +51,7 @@ export function setGalleryRequestSuccess(items: { [key: string]: IPictureModel }
   }
 }
 
+// Broadcasts that failed to load pictures
 export function setGalleryRequestFail(error: string): IGalleryActionRequestFail {
   return {
     type: ACTION_GALLERY_REQUEST_FAIL,
@@ -55,6 +59,7 @@ export function setGalleryRequestFail(error: string): IGalleryActionRequestFail 
   }
 }
 
+// Broadcasts that current picture parameter was changed
 export function setCurrentPicture(index: number): IGalleryActionSetCurrentPicture {
   return {
     type: ACTION_GALLERY_SET_CURRENT_PICTURE,

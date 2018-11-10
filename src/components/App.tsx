@@ -12,7 +12,7 @@ class App extends React.Component<any> {
 
   public render() {
     return (
-      <div className='App clearfix'>
+      <div className='App'>
         <Switch>
           <Route path='/' component={GalleryContainer}/>
         </Switch>

@@ -11,9 +11,14 @@ const mockGalleryResponse: { [key: string]: IPictureModel } = {
   '5': { id: '5', url: '/images/5.jpg' }
 }
 
+/**
+ *  GalleryService exposes methods to send http request related to
+ *  the Gallery entity
+ */
 class GalleryService implements IGalleryService {
   // private baseUrl = '/api/picture'
 
+  // getPictures sends http request to get pictures data
   public getPictures = (): Promise<{ [key: string]: IPictureModel }> => {
     return new Promise((resolve, reject) => {
       setTimeout(() => {

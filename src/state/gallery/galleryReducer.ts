@@ -15,6 +15,7 @@ import { IPictureModel } from '../../models/picture/modelPicture'
 
 // Reducers for the Gallery entity
 
+// Set pictures are being loaded
 function setGalleryRequesting(state: IGalleryState, action: IGalleryAction): IGalleryState {
   return Object.assign({}, state, {
     metadata: {
@@ -24,6 +25,9 @@ function setGalleryRequesting(state: IGalleryState, action: IGalleryAction): IGa
   })
 }
 
+// Add new pictures to store;
+// Set pictures have been loaded;
+// Reset error
 function setGalleryRequestSuccess(state: IGalleryState, action: IGalleryAction): IGalleryState {
   const items = (action as IGalleryActionRequestSuccess).items
   return Object.assign({}, state, {
@@ -36,6 +40,8 @@ function setGalleryRequestSuccess(state: IGalleryState, action: IGalleryAction):
   })
 }
 
+// Set fetching finished with error
+// Set error
 function setGalleryRequestFail(state: IGalleryState, action: IGalleryAction): IGalleryState {
   const error = (action as IGalleryActionRequestFail).error
   return Object.assign({}, state, {
@@ -47,6 +53,7 @@ function setGalleryRequestFail(state: IGalleryState, action: IGalleryAction): IG
   })
 }
 
+// Set current picture parameter
 function setGalleryCurrentPicture(state: IGalleryState, action: IGalleryAction): IGalleryState {
   const index = (action as IGalleryActionSetCurrentPicture).index
   return Object.assign({}, state, {
@@ -66,6 +73,7 @@ const initialState: IGalleryState = {
   }
 }
 
+// Process actions related with Gallery entity
 export const galleryReducer = (state: IGalleryState = initialState, action: IGalleryAction): IGalleryState => {
   switch (action.type) {
     case ACTION_GALLERY_REQUEST:
@@ -83,7 +91,7 @@ export const galleryReducer = (state: IGalleryState = initialState, action: IGal
 
 
 // Selectors for the Gallery entity
-// Selectors are extremely useful when redux's store is going to be changed.
+// Selectors are used as redux's store reading api for components
 
 export function getGalleryRequesting(state: IGalleryState): boolean {
   return state.metadata.fetching

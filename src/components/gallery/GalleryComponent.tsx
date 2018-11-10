@@ -14,9 +14,14 @@ interface IGalleryComponentProps {
   onCurrentPictureChange: (index: number) => void
 }
 
+const pictureWidth = 600
+
 export default class GalleryComponent extends React.Component<IGalleryComponentProps> {
 
+  // flag that is used to ignore 'next'/'previous' buttons click while picture is moving
   private sliding = false
+
+  // Reference to .carousel DOM component
   private refCarousel: any
 
   constructor(props: IGalleryComponentProps) {
@@ -82,16 +87,17 @@ export default class GalleryComponent extends React.Component<IGalleryComponentP
     // Move all pictures to their initial positions
     for (let i = 0; i < picturesNodes.length; i++) {
       (picturesNodes[i] as HTMLElement).style.opacity = '0';
-      (picturesNodes[i] as HTMLElement).style.transform = `translateX(${-(i - 1) * 600}px)`
+      (picturesNodes[i] as HTMLElement).style.transform = `translateX(${-(i - 1) * pictureWidth}px)`
     }
 
     // Move current picture left
     (picturesNodes[currentPicture] as HTMLElement).style.opacity = '1';
-    (picturesNodes[currentPicture] as HTMLElement).style.transform = `translateX(${-(currentPicture + 1) * 600}px)`;
+    (picturesNodes[currentPicture] as HTMLElement).style
+      .transform = `translateX(${-(currentPicture + 1) * pictureWidth}px)`;
 
     // Move next picture left
     (picturesNodes[nextPicture] as HTMLElement).style.opacity = '1';
-    (picturesNodes[nextPicture] as HTMLElement).style.transform = `translateX(${-(nextPicture) * 600}px)`
+    (picturesNodes[nextPicture] as HTMLElement).style.transform = `translateX(${-(nextPicture) * pictureWidth}px)`
 
     onCurrentPictureChange(nextPicture)
   }
@@ -109,20 +115,22 @@ export default class GalleryComponent extends React.Component<IGalleryComponentP
     // Move all pictures to their initial positions
     for (let i = 0; i < picturesNodes.length; i++) {
       (picturesNodes[i] as HTMLElement).style.opacity = '0';
-      (picturesNodes[i] as HTMLElement).style.transform = `translateX(${-(i + 1) * 600}px)`
+      (picturesNodes[i] as HTMLElement).style.transform = `translateX(${-(i + 1) * pictureWidth}px)`
     }
 
     // Move current picture right
     (picturesNodes[currentPicture] as HTMLElement).style.opacity = '1';
-    (picturesNodes[currentPicture] as HTMLElement).style.transform = `translateX(${-(currentPicture - 1) * 600}px)`;
+    (picturesNodes[currentPicture] as HTMLElement).style
+      .transform = `translateX(${-(currentPicture - 1) * pictureWidth}px)`;
 
     // Move next picture left
     (picturesNodes[nextPicture] as HTMLElement).style.opacity = '1';
-    (picturesNodes[nextPicture] as HTMLElement).style.transform = `translateX(${-(nextPicture) * 600}px)`
+    (picturesNodes[nextPicture] as HTMLElement).style.transform = `translateX(${-(nextPicture) * pictureWidth}px)`
 
     onCurrentPictureChange(nextPicture)
   }
 
+  // Add event listeners to carousel nodes; update 'sliding' flag when animation is completed
   private assignTransitionCompleteListener = () => {
     const carousel = this.refCarousel.current
     if (!carousel) {
@@ -138,6 +146,7 @@ export default class GalleryComponent extends React.Component<IGalleryComponentP
     }
   }
 
+  // Set flag 'sliding' to false
   private slidingCompleted = () => {
     this.sliding = false
   }
