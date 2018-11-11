@@ -33,8 +33,11 @@ export default class GalleryComponent extends React.Component<IGalleryComponentP
     this.props.onComponentMount()
   }
 
-  public componentDidUpdate() {
+  public componentDidUpdate(prevProps: IGalleryComponentProps) {
     this.assignTransitionCompleteListener()
+    if (prevProps.pictures.length === 0 && this.props.pictures.length > 0) {
+      this.fixPrevAnimation()
+    }
   }
 
   public render() {
@@ -149,5 +152,15 @@ export default class GalleryComponent extends React.Component<IGalleryComponentP
   // Set flag 'sliding' to false
   private slidingCompleted = () => {
     this.sliding = false
+  }
+
+  // Set initial transform style to the last picture. It fixes sliding right animation
+  private fixPrevAnimation = () => {
+    const picturesNodes = this.refCarousel.current.children
+    if (picturesNodes && picturesNodes.length > 0) {
+      const lastPictureIndex = picturesNodes.length - 1;
+      const translate = -picturesNodes.length * pictureWidth;
+      (picturesNodes[lastPictureIndex] as HTMLElement).style.transform = `translateX(${translate}px)`
+    }
   }
 }
