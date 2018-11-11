@@ -1,23 +1,22 @@
 /* Styles related to gallery component */
 
-$gallery-picture-height: 400px;
-$gallery-picture-width: 600px;
+$gallery-picture-height: 600px;
+$gallery-picture-height-small: 300px;
+$gallery-picture-height-medium: 450px;
 
 .gallery {
-  margin: 10px;
-
   .container {
     position: relative;
     margin: 0px;
     padding: 0px;
     white-space: nowrap;
-    width: $gallery-picture-width;
+    width: 100%;
     height: $gallery-picture-height;
     overflow-x: auto;
   }
 
   .gallery-dots {
-    bottom: 0px;
+    bottom: 20px;
     left: 0px;
     right: 0px;
   }
@@ -33,6 +32,22 @@ $gallery-picture-width: 600px;
     color: #ce3f41;
   }
 
+  .left-btn {
+    cursor: pointer;
+    position: absolute;
+    z-index: 5;
+    left: 20px;
+    top: 50%;
+  }
+
+  .right-btn {
+    cursor: pointer;
+    position: absolute;
+    z-index: 5;
+    right: 18px;
+    top: 50%;
+  }
+
   ul {
     margin: 0px;
     padding: 0px;
@@ -45,23 +60,42 @@ $gallery-picture-width: 600px;
     list-style: none;
     position: relative;
     float: left;
-    width: $gallery-picture-width;
+    background-size: cover;
+    background-repeat: no-repeat;
     height: $gallery-picture-height;
-  }
-
-  img {
-    height: $gallery-picture-height;
-    width: $gallery-picture-width;
   }
 
   .animate{
-    -webkit-transition-duration: .7s;
-    -moz-transition-duration: .7s;
-    -o-transition-duration: .7s;
-    transition-duration: .7s;
+    -webkit-transition-duration: .5s;
+    -moz-transition-duration: .5s;
+    -o-transition-duration: .5s;
+    transition-duration: .5s;
     -webkit-transition-property: -webkit-transform;
     -moz-transition-property: -moz-transform;
     -o-transition-property: -o-transform;
     transition-property: transform;
   }
 }
+
+@media only screen and (max-width: 700px) {
+  .gallery {
+    .container {
+      height: $gallery-picture-height-medium;
+      li {
+        height: $gallery-picture-height-medium;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .gallery {
+    .container {
+      height: $gallery-picture-height-small;
+      li {
+        height: $gallery-picture-height-small;
+      }
+    }
+  }
+}
+

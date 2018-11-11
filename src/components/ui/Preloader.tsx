@@ -5,11 +5,14 @@ interface IPreloaderProps {
   loading: boolean
 }
 
+const preloaderSize = 27
+const preloaderColor = '#185fc7'
+
 const Preloader = (props: IPreloaderProps) => (
   <MoonLoader
     sizeUnit={'px'}
-    size={27}
-    color={'#185fc7'}
+    size={preloaderSize}
+    color={preloaderColor}
     loading={props.loading}
   />
 )

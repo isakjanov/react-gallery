@@ -14,7 +14,6 @@ interface IGalleryComponentProps {
   onCurrentPictureChange: (index: number) => void
 }
 
-const pictureWidth = 600
 const autoRotationMs = 3000
 
 export default class GalleryComponent extends React.Component<IGalleryComponentProps> {
@@ -27,6 +26,8 @@ export default class GalleryComponent extends React.Component<IGalleryComponentP
 
   private autoRotationInterval: any
 
+  private pictureWidth: number
+
   constructor(props: IGalleryComponentProps) {
     super(props)
     this.refCarousel = React.createRef()
@@ -34,6 +35,7 @@ export default class GalleryComponent extends React.Component<IGalleryComponentP
 
   public componentDidMount() {
     this.props.onComponentMount()
+    this.pictureWidth = window.innerWidth
   }
 
   public componentDidUpdate(prevProps: IGalleryComponentProps) {
@@ -48,23 +50,35 @@ export default class GalleryComponent extends React.Component<IGalleryComponentP
 
     const { pictures, requesting, error } = this.props
     const carouselCalculatedStyle = {
-      width: pictures.length * pictureWidth
+      width: pictures.length * this.pictureWidth
     }
 
     return (
       <div className='gallery flex flex-row justify-center align-items-center'>
 
-        <div onClick={this.handlePrevClick} className='cursor--pointer'>
-          <IconArrowLeft/>
-        </div>
         <div className='container'>
           <ul id='carousel' className='animate' style={carouselCalculatedStyle} ref={this.refCarousel}>
             {pictures.map((it, index) => (
-              <li className='animate' key={`gallery-image-${it.id}`}>
-                <img src={it.url}/>
-              </li>
+              <li
+                className='animate'
+                key={`gallery-image-${it.id}`}
+                style={{
+                  width: this.pictureWidth,
+                  backgroundImage: `url(${it.url})`
+                }}/>
             ))}
           </ul>
+
+          <div
+            onClick={this.handlePrevClick}
+            className='left-btn'>
+            <IconArrowLeft/>
+          </div>
+          <div
+            onClick={this.handleNextClick}
+            className='right-btn'>
+            <IconArrowRight/>
+          </div>
 
           <div className='absolute gallery-dots flex justify-center'>
             <GalleryDotsContainer/>
@@ -76,9 +90,7 @@ export default class GalleryComponent extends React.Component<IGalleryComponentP
             <div className='error flex justify-center'>{error}</div>
           )}
         </div>
-        <div onClick={this.handleNextClick} className='cursor--pointer'>
-          <IconArrowRight/>
-        </div>
+
 
       </div>
     )
@@ -107,17 +119,17 @@ export default class GalleryComponent extends React.Component<IGalleryComponentP
     // Move all pictures to their initial positions
     for (let i = 0; i < picturesNodes.length; i++) {
       (picturesNodes[i] as HTMLElement).style.opacity = '0';
-      (picturesNodes[i] as HTMLElement).style.transform = `translateX(${-(i - 1) * pictureWidth}px)`
+      (picturesNodes[i] as HTMLElement).style.transform = `translateX(${-(i - 1) * this.pictureWidth}px)`
     }
 
     // Move current picture left
     (picturesNodes[currentPicture] as HTMLElement).style.opacity = '1';
     (picturesNodes[currentPicture] as HTMLElement).style
-      .transform = `translateX(${-(currentPicture + 1) * pictureWidth}px)`;
+      .transform = `translateX(${-(currentPicture + 1) * this.pictureWidth}px)`;
 
     // Move next picture left
     (picturesNodes[nextPicture] as HTMLElement).style.opacity = '1';
-    (picturesNodes[nextPicture] as HTMLElement).style.transform = `translateX(${-(nextPicture) * pictureWidth}px)`
+    (picturesNodes[nextPicture] as HTMLElement).style.transform = `translateX(${-(nextPicture) * this.pictureWidth}px)`
 
     onCurrentPictureChange(nextPicture)
   }
@@ -135,17 +147,17 @@ export default class GalleryComponent extends React.Component<IGalleryComponentP
     // Move all pictures to their initial positions
     for (let i = 0; i < picturesNodes.length; i++) {
       (picturesNodes[i] as HTMLElement).style.opacity = '0';
-      (picturesNodes[i] as HTMLElement).style.transform = `translateX(${-(i + 1) * pictureWidth}px)`
+      (picturesNodes[i] as HTMLElement).style.transform = `translateX(${-(i + 1) * this.pictureWidth}px)`
     }
 
     // Move current picture right
     (picturesNodes[currentPicture] as HTMLElement).style.opacity = '1';
     (picturesNodes[currentPicture] as HTMLElement).style
-      .transform = `translateX(${-(currentPicture - 1) * pictureWidth}px)`;
+      .transform = `translateX(${-(currentPicture - 1) * this.pictureWidth}px)`;
 
     // Move next picture left
     (picturesNodes[nextPicture] as HTMLElement).style.opacity = '1';
-    (picturesNodes[nextPicture] as HTMLElement).style.transform = `translateX(${-(nextPicture) * pictureWidth}px)`
+    (picturesNodes[nextPicture] as HTMLElement).style.transform = `translateX(${-(nextPicture) * this.pictureWidth}px)`
 
     onCurrentPictureChange(nextPicture)
   }
@@ -179,8 +191,8 @@ export default class GalleryComponent extends React.Component<IGalleryComponentP
   private fixPrevAnimation = () => {
     const picturesNodes = this.refCarousel.current.children
     if (picturesNodes && picturesNodes.length > 0) {
-      const lastPictureIndex = picturesNodes.length - 1;
-      const translate = -picturesNodes.length * pictureWidth;
+      const lastPictureIndex = picturesNodes.length - 1
+      const translate = -picturesNodes.length * this.pictureWidth;
       (picturesNodes[lastPictureIndex] as HTMLElement).style.transform = `translateX(${translate}px)`
     }
   }

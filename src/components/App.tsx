@@ -5,20 +5,12 @@ import {
   Switch
 } from 'react-router'
 
-class App extends React.Component<any> {
-  constructor(props: any) {
-    super(props)
-  }
-
-  public render() {
-    return (
-      <div className='App'>
-        <Switch>
-          <Route path='/' component={GalleryContainer}/>
-        </Switch>
-      </div>
-    )
-  }
-}
+const App = () => (
+  <div className='App'>
+    <Switch>
+      <Route path='/' component={GalleryContainer}/>
+    </Switch>
+  </div>
+)
 
 export default App
