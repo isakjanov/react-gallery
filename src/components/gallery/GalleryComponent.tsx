@@ -118,18 +118,14 @@ export default class GalleryComponent extends React.Component<IGalleryComponentP
 
     // Move all pictures to their initial positions
     for (let i = 0; i < picturesNodes.length; i++) {
-      (picturesNodes[i] as HTMLElement).style.opacity = '0';
-      (picturesNodes[i] as HTMLElement).style.transform = `translateX(${-(i - 1) * this.pictureWidth}px)`
+      this.movePictureToPosition(picturesNodes[i], i - 1)
     }
 
     // Move current picture left
-    (picturesNodes[currentPicture] as HTMLElement).style.opacity = '1';
-    (picturesNodes[currentPicture] as HTMLElement).style
-      .transform = `translateX(${-(currentPicture + 1) * this.pictureWidth}px)`;
+    this.moveCurrentPictureToPosition(picturesNodes[currentPicture], currentPicture + 1);
 
     // Move next picture left
-    (picturesNodes[nextPicture] as HTMLElement).style.opacity = '1';
-    (picturesNodes[nextPicture] as HTMLElement).style.transform = `translateX(${-(nextPicture) * this.pictureWidth}px)`
+    this.moveNextPictureToPosition(picturesNodes[nextPicture], nextPicture);
 
     onCurrentPictureChange(nextPicture)
   }
@@ -146,20 +142,30 @@ export default class GalleryComponent extends React.Component<IGalleryComponentP
 
     // Move all pictures to their initial positions
     for (let i = 0; i < picturesNodes.length; i++) {
-      (picturesNodes[i] as HTMLElement).style.opacity = '0';
-      (picturesNodes[i] as HTMLElement).style.transform = `translateX(${-(i + 1) * this.pictureWidth}px)`
+      this.movePictureToPosition(picturesNodes[i], i + 1)
     }
 
     // Move current picture right
-    (picturesNodes[currentPicture] as HTMLElement).style.opacity = '1';
-    (picturesNodes[currentPicture] as HTMLElement).style
-      .transform = `translateX(${-(currentPicture - 1) * this.pictureWidth}px)`;
+    this.moveCurrentPictureToPosition(picturesNodes[currentPicture], currentPicture - 1);
 
     // Move next picture left
-    (picturesNodes[nextPicture] as HTMLElement).style.opacity = '1';
-    (picturesNodes[nextPicture] as HTMLElement).style.transform = `translateX(${-(nextPicture) * this.pictureWidth}px)`
-
+    this.moveNextPictureToPosition(picturesNodes[nextPicture], nextPicture);
     onCurrentPictureChange(nextPicture)
+  }
+
+  private movePictureToPosition = (pictureNode: HTMLElement, position: number) => {
+    pictureNode.style.opacity = '0'
+    pictureNode.style.transform = `translateX(${-position * this.pictureWidth}px)`
+  }
+
+  private moveCurrentPictureToPosition = (pictureNode: HTMLElement, nextPosition: number) => {
+    pictureNode.style.opacity = '1';
+    pictureNode.style.transform = `translateX(${-nextPosition * this.pictureWidth}px)`;
+  }
+
+  private moveNextPictureToPosition = (pictureNode: HTMLElement, nextPosition: number) => {
+    pictureNode.style.opacity = '1';
+    pictureNode.style.transform = `translateX(${-nextPosition * this.pictureWidth}px)`
   }
 
   // Add event listeners to carousel nodes; update 'sliding' flag when animation is completed
