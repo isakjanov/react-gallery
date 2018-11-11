@@ -15,6 +15,7 @@ interface IGalleryComponentProps {
 }
 
 const pictureWidth = 600
+const autoRotationMs = 3000
 
 export default class GalleryComponent extends React.Component<IGalleryComponentProps> {
 
@@ -23,6 +24,8 @@ export default class GalleryComponent extends React.Component<IGalleryComponentP
 
   // Reference to .carousel DOM component
   private refCarousel: any
+
+  private autoRotationInterval: any
 
   constructor(props: IGalleryComponentProps) {
     super(props)
@@ -37,6 +40,7 @@ export default class GalleryComponent extends React.Component<IGalleryComponentP
     this.assignTransitionCompleteListener()
     if (prevProps.pictures.length === 0 && this.props.pictures.length > 0) {
       this.fixPrevAnimation()
+      this.assignAutoRotation()
     }
   }
 
@@ -78,6 +82,16 @@ export default class GalleryComponent extends React.Component<IGalleryComponentP
   }
 
   private handleNextClick = () => {
+    clearInterval(this.autoRotationInterval)
+    this.movePicturesLeft()
+  }
+
+  private handlePrevClick = () => {
+    clearInterval(this.autoRotationInterval)
+    this.movePicturesRight()
+  }
+
+  private movePicturesLeft = () => {
     if (this.sliding || this.props.pictures.length === 0) {
       return
     }
@@ -105,7 +119,7 @@ export default class GalleryComponent extends React.Component<IGalleryComponentP
     onCurrentPictureChange(nextPicture)
   }
 
-  private handlePrevClick = () => {
+  private movePicturesRight = () => {
     if (this.sliding || this.props.pictures.length === 0) {
       return
     }
@@ -147,6 +161,10 @@ export default class GalleryComponent extends React.Component<IGalleryComponentP
       picturesNodes[i].addEventListener('oTransitionEnd', this.slidingCompleted, true)
       picturesNodes[i].addEventListener('MSTransitionEnd', this.slidingCompleted, true)
     }
+  }
+
+  private assignAutoRotation = () => {
+    this.autoRotationInterval = setInterval(this.movePicturesLeft, autoRotationMs)
   }
 
   // Set flag 'sliding' to false
