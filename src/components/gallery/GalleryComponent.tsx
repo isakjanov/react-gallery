@@ -47,6 +47,9 @@ export default class GalleryComponent extends React.Component<IGalleryComponentP
   public render() {
 
     const { pictures, requesting, error } = this.props
+    const carouselCalculatedStyle = {
+      width: pictures.length * pictureWidth
+    }
 
     return (
       <div className='gallery flex flex-row justify-center align-items-center'>
@@ -55,7 +58,7 @@ export default class GalleryComponent extends React.Component<IGalleryComponentP
           <IconArrowLeft/>
         </div>
         <div className='container'>
-          <ul id='carousel' className='animate' ref={this.refCarousel}>
+          <ul id='carousel' className='animate' style={carouselCalculatedStyle} ref={this.refCarousel}>
             {pictures.map((it, index) => (
               <li className='animate' key={`gallery-image-${it.id}`}>
                 <img src={it.url}/>
