@@ -4,6 +4,7 @@ import GalleryDotsContainer from './GalleryDotsContainer'
 import IconArrowRight from '../../icons/IconArrowRight'
 import IconArrowLeft from '../../icons/IconArrowLeft'
 import Preloader from '../ui/Preloader'
+import { element } from 'prop-types'
 
 interface IGalleryComponentProps {
   pictures: IPictureModel[]
@@ -117,9 +118,9 @@ export default class GalleryComponent extends React.Component<IGalleryComponentP
     const nextPicture = currentPicture === pictures.length - 1 ? 0 : currentPicture + 1
 
     // Move all pictures to their initial positions
-    for (let i = 0; i < picturesNodes.length; i++) {
-      this.movePictureToPosition(picturesNodes[i], i - 1)
-    }
+    picturesNodes.forEach((element: HTMLElement, index: number) => {
+      this.movePictureToPosition(element, index - 1)
+    })
 
     // Move current picture left
     this.moveCurrentPictureToPosition(picturesNodes[currentPicture], currentPicture + 1);
@@ -141,9 +142,9 @@ export default class GalleryComponent extends React.Component<IGalleryComponentP
     const nextPicture = currentPicture === 0 ? pictures.length - 1 : currentPicture - 1
 
     // Move all pictures to their initial positions
-    for (let i = 0; i < picturesNodes.length; i++) {
-      this.movePictureToPosition(picturesNodes[i], i + 1)
-    }
+    picturesNodes.forEach((element: HTMLElement, index: number) => {
+      this.movePictureToPosition(element, index + 1)
+    })
 
     // Move current picture right
     this.moveCurrentPictureToPosition(picturesNodes[currentPicture], currentPicture - 1);
@@ -176,12 +177,12 @@ export default class GalleryComponent extends React.Component<IGalleryComponentP
     }
     const picturesNodes = carousel.children
 
-    for (let i = 0; i < picturesNodes.length; i++) {
-      picturesNodes[i].addEventListener('transitionend', this.slidingCompleted, true)
-      picturesNodes[i].addEventListener('webkitTransitionEnd', this.slidingCompleted, true)
-      picturesNodes[i].addEventListener('oTransitionEnd', this.slidingCompleted, true)
-      picturesNodes[i].addEventListener('MSTransitionEnd', this.slidingCompleted, true)
-    }
+    picturesNodes.forEach((element: HTMLElement) => {
+      element.addEventListener('transitionend', this.slidingCompleted, true)
+      element.addEventListener('webkitTransitionEnd', this.slidingCompleted, true)
+      element.addEventListener('oTransitionEnd', this.slidingCompleted, true)
+      element.addEventListener('MSTransitionEnd', this.slidingCompleted, true)
+    })
   }
 
   private assignAutoRotation = () => {

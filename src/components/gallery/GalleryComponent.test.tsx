@@ -43,9 +43,7 @@ describe('<GalleryComponent/>', () => {
         onCurrentPictureChange={() => null}/>
     )
 
-    expect(wrapper.find('#carousel').children().length).toEqual(2)
-    expect(wrapper.find('#carousel').childAt(0).find('img').prop('src')).toEqual('url1')
-    expect(wrapper.find('#carousel').childAt(1).find('img').prop('src')).toEqual('url2')
+     expect(wrapper.find('#carousel').children().length).toEqual(2)
   })
 
   it('preloader should get right properties', () => {
