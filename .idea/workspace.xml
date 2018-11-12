@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="e2aae185-60ef-420b-9e27-cb68072c3de0" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/gallery/GalleryComponent.test.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/gallery/GalleryComponent.test.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/gallery/GalleryComponent.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/gallery/GalleryComponent.tsx" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -35,7 +34,7 @@
           <entry key="scss" value="17" />
           <entry key="svg" value="9" />
           <entry key="ts" value="105" />
-          <entry key="tsx" value="68" />
+          <entry key="tsx" value="69" />
           <entry key="xml" value="1" />
         </counts>
       </usages-collector>
@@ -49,7 +48,7 @@
           <entry key="SCSS" value="17" />
           <entry key="SVG" value="9" />
           <entry key="TypeScript" value="105" />
-          <entry key="TypeScript JSX" value="68" />
+          <entry key="TypeScript JSX" value="69" />
           <entry key="XML" value="1" />
           <entry key="tsconfig" value="3" />
         </counts>
@@ -61,8 +60,8 @@
           <entry key="md" value="150" />
           <entry key="scss" value="1182" />
           <entry key="ts" value="7038" />
-          <entry key="tsx" value="9071" />
-          <entry key="txt" value="637" />
+          <entry key="tsx" value="9225" />
+          <entry key="txt" value="648" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -70,10 +69,10 @@
           <entry key="Git file" value="19" />
           <entry key="JSON" value="66" />
           <entry key="Markdown" value="150" />
-          <entry key="PLAIN_TEXT" value="637" />
+          <entry key="PLAIN_TEXT" value="648" />
           <entry key="SCSS" value="1182" />
           <entry key="TypeScript" value="7038" />
-          <entry key="TypeScript JSX" value="9071" />
+          <entry key="TypeScript JSX" value="9225" />
           <entry key="tsconfig" value="7" />
         </counts>
       </usages-collector>
@@ -90,25 +89,13 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/gallery/GalleryComponent.tsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="174">
-              <caret line="67" column="18" selection-start-line="67" selection-start-column="18" selection-end-line="67" selection-end-column="51" />
+            <state relative-caret-position="295">
+              <caret line="185" column="3" lean-forward="true" selection-start-line="185" selection-start-column="3" selection-end-line="185" selection-end-column="3" />
               <folding>
                 <element signature="e#0#30#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/components/gallery/GalleryComponent.test.tsx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="178">
-              <caret line="46" column="91" selection-start-line="46" selection-start-column="91" selection-end-line="46" selection-end-column="91" />
-              <folding>
-                <element signature="e#0#32#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -136,6 +123,8 @@
       <find>for</find>
       <find>for(</find>
       <find>for (</find>
+      <find>forEach</find>
+      <find>forEa</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/src</dir>
@@ -143,6 +132,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="MIXED" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -184,8 +174,8 @@
         <option value="$PROJECT_DIR$/src/components/ui/Preloader.tsx" />
         <option value="$PROJECT_DIR$/src/components/App.tsx" />
         <option value="$PROJECT_DIR$/src/styles/scss/gallery.scss" />
-        <option value="$PROJECT_DIR$/src/components/gallery/GalleryComponent.tsx" />
         <option value="$PROJECT_DIR$/src/components/gallery/GalleryComponent.test.tsx" />
+        <option value="$PROJECT_DIR$/src/components/gallery/GalleryComponent.tsx" />
       </list>
     </option>
   </component>
@@ -262,7 +252,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541993970299" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541994856382" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.tslint" value="$PROJECT_DIR$/node_modules/tslint" />
@@ -432,7 +422,7 @@
       <workItem from="1541597906056" duration="7749000" />
       <workItem from="1541679151377" duration="9676000" />
       <workItem from="1541745088220" duration="5432000" />
-      <workItem from="1541761764767" duration="21662000" />
+      <workItem from="1541761764767" duration="22589000" />
     </task>
     <task id="LOCAL-00001" summary="added dependencies">
       <created>1541431555896</created>
@@ -651,7 +641,14 @@
       <option name="project" value="LOCAL" />
       <updated>1541952221432</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="fixed tests">
+      <created>1541993992980</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1541993992980</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -687,7 +684,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="65601000" />
+    <option name="totallyTimeSpent" value="66528000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="777" extended-state="6" />
@@ -700,6 +697,7 @@
       <window_info id="UI Designer" order="4" />
       <window_info id="Favorites" order="5" side_tool="true" />
       <window_info id="Capture Tool" order="6" />
+      <window_info anchor="bottom" id="Messages" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.5109489" />
@@ -708,7 +706,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="TypeScript" order="7" weight="0.329927" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.5284672" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.5284672" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="RNConsole" order="10" />
       <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
@@ -774,6 +772,14 @@
               <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
                 <collection />
               </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
             </State>
           </value>
         </entry>
@@ -799,7 +805,6 @@
     <MESSAGE value="Wrote tests for actions" />
     <MESSAGE value="Wrote tests for async actions" />
     <MESSAGE value="Displayed error message&#10;Wrote tests for error message" />
-    <MESSAGE value="fixed tests" />
     <MESSAGE value="Added comments" />
     <MESSAGE value="Updated Readme" />
     <MESSAGE value="fixed 'prev' animation" />
@@ -809,7 +814,8 @@
     <MESSAGE value="updated styles" />
     <MESSAGE value="responsive design" />
     <MESSAGE value="refactoring" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactoring" />
+    <MESSAGE value="fixed tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed tests" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
@@ -1084,22 +1090,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/gallery/GalleryComponent.tsx">
+    <entry file="file://$PROJECT_DIR$/src/components/gallery/GalleryComponent.test.tsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="67" column="18" selection-start-line="67" selection-start-column="18" selection-end-line="67" selection-end-column="51" />
+        <state relative-caret-position="855">
+          <caret line="57" column="5" lean-forward="true" selection-start-line="57" selection-start-column="5" selection-end-line="57" selection-end-column="5" />
           <folding>
-            <element signature="e#0#30#0" expanded="true" />
+            <element signature="e#0#32#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/gallery/GalleryComponent.test.tsx">
+    <entry file="file://$PROJECT_DIR$/src/components/gallery/GalleryComponent.tsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="178">
-          <caret line="46" column="91" selection-start-line="46" selection-start-column="91" selection-end-line="46" selection-end-column="91" />
+        <state relative-caret-position="295">
+          <caret line="185" column="3" lean-forward="true" selection-start-line="185" selection-start-column="3" selection-end-line="185" selection-end-column="3" />
           <folding>
-            <element signature="e#0#32#0" expanded="true" />
+            <element signature="e#0#30#0" expanded="true" />
           </folding>
         </state>
       </provider>
