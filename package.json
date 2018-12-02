@@ -17,7 +17,7 @@
   },
   "scripts": {
     "start": "react-scripts-ts start",
-    "build": "npm run sass:build && react-scripts-ts build",
+    "build": "npm run sass:build && react-scripts-ts build && cp build/index.html build/404.html",
     "test": "react-scripts-ts test --env=jsdom",
     "eject": "react-scripts-ts eject",
     "sass:watch": "node-sass -w src/styles/scss/index.scss -o src/styles/css",

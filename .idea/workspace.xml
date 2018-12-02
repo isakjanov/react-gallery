@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e2aae185-60ef-420b-9e27-cb68072c3de0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/preview/Preview.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/preview/PreviewPane.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/App.tsx" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -34,7 +30,7 @@
           <entry key="css" value="3" />
           <entry key="gitignore" value="4" />
           <entry key="jpeg" value="1" />
-          <entry key="json" value="31" />
+          <entry key="json" value="32" />
           <entry key="md" value="3" />
           <entry key="scss" value="19" />
           <entry key="svg" value="9" />
@@ -48,7 +44,7 @@
           <entry key="CSS" value="3" />
           <entry key="Git file" value="4" />
           <entry key="Image" value="1" />
-          <entry key="JSON" value="28" />
+          <entry key="JSON" value="29" />
           <entry key="Markdown" value="3" />
           <entry key="SCSS" value="19" />
           <entry key="SVG" value="9" />
@@ -61,20 +57,20 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="gitignore" value="19" />
-          <entry key="json" value="73" />
+          <entry key="json" value="115" />
           <entry key="md" value="150" />
           <entry key="scss" value="1182" />
           <entry key="ts" value="7038" />
           <entry key="tsx" value="11071" />
-          <entry key="txt" value="648" />
+          <entry key="txt" value="686" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Git file" value="19" />
-          <entry key="JSON" value="66" />
+          <entry key="JSON" value="108" />
           <entry key="Markdown" value="150" />
-          <entry key="PLAIN_TEXT" value="648" />
+          <entry key="PLAIN_TEXT" value="686" />
           <entry key="SCSS" value="1182" />
           <entry key="TypeScript" value="7038" />
           <entry key="TypeScript JSX" value="11071" />
@@ -106,14 +102,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/preview/Preview.tsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="455">
-              <caret line="42" column="55" selection-start-line="42" selection-start-column="55" selection-end-line="42" selection-end-column="55" />
+            <state relative-caret-position="1200">
+              <caret line="80" column="5" lean-forward="true" selection-start-line="80" selection-start-column="5" selection-end-line="80" selection-end-column="5" />
               <folding>
                 <element signature="e#0#30#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/package.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="16" column="4" lean-forward="true" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -216,7 +221,6 @@
         <option value="$PROJECT_DIR$/src/state/gallery/galleryReducer.ts" />
         <option value="$PROJECT_DIR$/src/styles/scss/layout.scss" />
         <option value="$PROJECT_DIR$/src/services/impl/Gallery.ts" />
-        <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/icons/IconBaselineDot.tsx" />
         <option value="$PROJECT_DIR$/src/icons/IconOutlineDot.tsx" />
@@ -229,6 +233,7 @@
         <option value="$PROJECT_DIR$/src/components/preview/PreviewPane.tsx" />
         <option value="$PROJECT_DIR$/src/components/App.tsx" />
         <option value="$PROJECT_DIR$/src/components/preview/Preview.tsx" />
+        <option value="$PROJECT_DIR$/package.json" />
       </list>
     </option>
   </component>
@@ -273,26 +278,6 @@
               <item name="react-gallery" type="b2602c69:ProjectViewProjectNode" />
               <item name="react-gallery" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="react-gallery" type="b2602c69:ProjectViewProjectNode" />
-              <item name="react-gallery" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="gallery" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="react-gallery" type="b2602c69:ProjectViewProjectNode" />
-              <item name="react-gallery" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="preview" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="react-gallery" type="b2602c69:ProjectViewProjectNode" />
-              <item name="react-gallery" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="styles" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -314,7 +299,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543662560700" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543662678632" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.tslint" value="$PROJECT_DIR$/node_modules/tslint" />
@@ -487,7 +472,7 @@
       <workItem from="1541761764767" duration="22978000" />
       <workItem from="1542640051396" duration="1995000" />
       <workItem from="1542729454022" duration="2944000" />
-      <workItem from="1543657306245" duration="4885000" />
+      <workItem from="1543657306245" duration="5695000" />
     </task>
     <task id="LOCAL-00001" summary="added dependencies">
       <created>1541431555896</created>
@@ -720,7 +705,14 @@
       <option name="project" value="LOCAL" />
       <updated>1541994885412</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="Implemented resizable image">
+      <created>1543662613037</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1543662613038</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -756,7 +748,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="76741000" />
+    <option name="totallyTimeSpent" value="77551000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="777" extended-state="6" />
@@ -862,7 +854,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added images" />
     <MESSAGE value="plugged sass preprocessor&#10;implemented image gallery" />
     <MESSAGE value="updated Readme" />
     <MESSAGE value="added animations with react-motion" />
@@ -887,7 +878,8 @@
     <MESSAGE value="responsive design" />
     <MESSAGE value="refactoring" />
     <MESSAGE value="fixed tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed tests" />
+    <MESSAGE value="Implemented resizable image" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implemented resizable image" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
@@ -1141,13 +1133,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="31" column="34" selection-start-line="31" selection-start-column="34" selection-end-line="31" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/rc-slider/assets/index.css">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -1180,11 +1165,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/preview/Preview.tsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="455">
-          <caret line="42" column="55" selection-start-line="42" selection-start-column="55" selection-end-line="42" selection-end-column="55" />
+        <state relative-caret-position="1200">
+          <caret line="80" column="5" lean-forward="true" selection-start-line="80" selection-start-column="5" selection-end-line="80" selection-end-column="5" />
           <folding>
             <element signature="e#0#30#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="16" column="4" lean-forward="true" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
         </state>
       </provider>
     </entry>
